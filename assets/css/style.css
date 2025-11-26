@@ -19,11 +19,19 @@ font-family: 'Fraunces'; */
 body {
   background-color: pink;
   font-family: "Arial";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  min-height: 75px;
+  padding: 20px;
 }
 
 /* REMOVES WHITE BACKGROUND FROM THE NAVBAR */
 .bg-body-tertiary {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgb(8, 113, 101) !important;
 }
 
 /* ADDS FERVE'S FONT TO THE LOGO */
@@ -36,30 +44,25 @@ body {
 #logo {
   font-size: 13.8vw;
   font-family: "Fraunces", serif;
+  flex: 1;
 }
 
 /* MAIN */
 main {
   padding-left: 19px;
   padding-right: 19px;
+  flex: 1;
 }
 
 /* FOOTER */
-footer {
+/* footer {
   position: fixed;
-  display: flex;
   bottom: 0px;
-  min-height: 50px;
+  height: 30px;
   width: 100%;
   background-color: yellow;
-  padding-left: 19px;
-  padding-right: 19px;
-}
-
-footer i {
-  margin: 1px;
-  align-items: end;
-}
+  text-wrap: wrap;
+} */
 
 /* IMAGE TEXT ON HOVER */
 .image-container {

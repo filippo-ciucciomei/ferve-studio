@@ -30,8 +30,8 @@
   </head>
   <body>
     <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container">
         <a class="navbar-brand FrauncesText" href="#about">ferve</a>
         <button
           class="navbar-toggler"
@@ -45,7 +45,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <!--ms-auto = applies margin at the left, pushing text to the right-->
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About</a>
@@ -70,13 +70,29 @@
     <!-- MAIN CONTENT  -->
 
     <main>
-      <p id="logo">ferve</p>
+      <section id="floating-logo" class="container">
+        <p id="logo">ferve</p>
+      </section>
     </main>
 
-    <footer>
-      <div>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
+    <!-- FOOTER -->
+    <footer class="container pb-3">
+      <div class="row align-items-center">
+        <!-- Empty spacer on desktop -->
+        <div class="col-12 col-md-4 d-none d-md-block"></div>
+
+        <!-- Icons -->
+        <div
+          class="col-12 col-md-4 order-md-2 mb-2 d-flex justify-content-center justify-content-md-end gap-3"
+        >
+          <i class="fa-brands fa-instagram fs-4"></i>
+          <i class="fa-brands fa-tiktok fs-4"></i>
+        </div>
+
+        <!-- Center text -->
+        <div class="col-12 col-md-4 text-center mb-2">
+          © Ferve Studio. All rights reserved.
+        </div>
       </div>
     </footer>
 
