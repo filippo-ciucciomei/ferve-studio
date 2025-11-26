@@ -47,6 +47,110 @@ nav {
   flex: 1;
 }
 
+#floating-logo {
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bold;
+  animation: bounce 49s linear infinite;
+}
+
+#floating-logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  animation: bouncePath 70s linear infinite;
+}
+
+@keyframes bouncePath {
+
+  /* START & END — point #1 and #10 */
+  0% {
+    top: 75px;
+    left: 30px;
+  }
+
+  /* POINT #2 — right-middle */
+  19% {
+    top: 245px;
+    left: calc(100vw - 417px);
+  }
+
+  /* POINT #3 — bottom-right corner */
+  27% {
+    top: calc(100vh - 220px);
+    left: calc(100vw - 707px);
+  }
+
+  /* POINT #4 — bottom-centre */
+  39% {
+    top: 0;
+    left: calc(100vw - 978px);
+  }
+
+  /* POINT #5 — left-mid */
+  49% {
+    top: calc(100vh - 540px);
+    left: 0px;
+  }
+
+  /* POINT #6 — top-centre-ish */
+  58% {
+    top: calc(100vh - 220px);
+    left: 155px;
+  }
+
+  /* POINT #7 — top slightly right */
+  74% {
+    top: 120px;
+    left: calc(100vw - 417px);
+  }
+
+  /* POINT #8 — mid-right */
+  84% {
+    top: 0px;
+    left: 2000x;
+  }
+
+  /* POINT #9 — mid-left high */
+  99% {
+    top: 30px;
+    left: 0px;
+  }
+
+  /* POINT #10 — near the “f” intersection before looping */
+  100% {
+    top: 75px;
+    left: 30px;
+  }
+}
+
+
+
+/* @keyframes bounce {
+   0% {
+    top: 15px;
+    left: 20px;
+  }
+  25% {
+    top: 40vh;
+    left: calc(100vw - 417px);
+  }
+  35% {
+    top: calc(100vh - 220px);
+    left: calc(100vw - 615px);
+  }
+  75% {
+    top: 0;
+    left: calc(100vw - 410px);
+  }
+  100% {
+    top: 0;
+    left: calc(100vw - 410px);
+  } */
+
+  
+}
+
 /* MAIN */
 main {
   padding-left: 19px;
@@ -55,14 +159,10 @@ main {
 }
 
 /* FOOTER */
-/* footer {
-  position: fixed;
+footer {
+  position: sticky;
   bottom: 0px;
-  height: 30px;
-  width: 100%;
-  background-color: yellow;
-  text-wrap: wrap;
-} */
+}
 
 /* IMAGE TEXT ON HOVER */
 .image-container {
