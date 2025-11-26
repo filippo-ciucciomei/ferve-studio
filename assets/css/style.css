@@ -58,7 +58,7 @@ nav {
   position: absolute;
   top: 15px;
   left: 20px;
-  animation: bouncePath 70s linear infinite;
+  animation: bouncePath 40s linear infinite;
 }
 
 @keyframes bouncePath {
@@ -112,8 +112,8 @@ nav {
   }
 
   /* POINT #9 — mid-left high */
-  99% {
-    top: 30px;
+  99.5% {
+    top: 60px;
     left: 0px;
   }
 
