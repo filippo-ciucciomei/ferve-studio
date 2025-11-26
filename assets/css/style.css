@@ -1,0 +1,101 @@
+/* <weight>: Use a value from 100 to 900
+ <uniquifier>: Use a unique and descriptive class name */
+
+/* FONT STYLING
+.fraunces-<uniquifier> {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}  */
+
+/* LOGO FONT
+font-size: 13.8vw; 
+font-family: 'Fraunces'; */
+
+body {
+  background-color: pink;
+  font-family: "Arial";
+}
+
+/* REMOVES WHITE BACKGROUND FROM THE NAVBAR */
+.bg-body-tertiary {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* ADDS FERVE'S FONT TO THE LOGO */
+.FrauncesText {
+  font-family: "Fraunces", serif;
+  font-weight: 251;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+#logo {
+  font-size: 13.8vw;
+  font-family: "Fraunces", serif;
+}
+
+/* MAIN */
+main {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+/* FOOTER */
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  min-height: 50px;
+  width: 100%;
+  background-color: yellow;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+footer i {
+  margin: 1px;
+  align-items: end;
+}
+
+/* IMAGE TEXT ON HOVER */
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* optional */
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: 0.3s ease;
+}
+
+/* The overlay text */
+.overlay-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(220, 220, 220, 0.6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: 0.3s ease;
+  text-align: center;
+  pointer-events: none; /* so the hover works smoothly */
+}
+
+/* On hover: image gets darker and text appears */
+.image-container:hover img {
+  filter: brightness(30%);
+}
+
+.image-container:hover .overlay-text {
+  opacity: 1;
+}
