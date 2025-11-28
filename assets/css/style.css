@@ -16,22 +16,10 @@
 font-size: 13.8vw; 
 font-family: 'Fraunces'; */
 
+/* GENERAL STYLE  */
 body {
   background-color: pink;
   font-family: "Arial";
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  min-height: 75px;
-  padding: 20px;
-}
-
-/* REMOVES WHITE BACKGROUND FROM THE NAVBAR */
-.bg-body-tertiary {
-  background-color: rgb(8, 113, 101) !important;
 }
 
 /* ADDS FERVE'S FONT TO THE LOGO */
@@ -41,17 +29,17 @@ nav {
   font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
+.section {
+  margin-top: 3rem;
+}
+
+/* ABOUT */
+
+/* INDEX */
+
 #logo {
   font-size: 13.8vw;
   font-family: "Fraunces", serif;
-  flex: 1;
-}
-
-#floating-logo {
-  position: absolute;
-  font-size: 3rem;
-  font-weight: bold;
-  animation: bounce 49s linear infinite;
 }
 
 #floating-logo {
@@ -62,69 +50,60 @@ nav {
 }
 
 @keyframes bouncePath {
-
-  /* START & END — point #1 and #10 */
+  /* START & END */
   0% {
     top: 75px;
-    left: 30px;
+    left: 0px;
   }
 
-  /* POINT #2 — right-middle */
+  /* POINT #2 */
   19% {
     top: 245px;
     left: calc(100vw - 417px);
   }
 
-  /* POINT #3 — bottom-right corner */
+  /* POINT #3  */
   27% {
     top: calc(100vh - 220px);
     left: calc(100vw - 707px);
   }
 
-  /* POINT #4 — bottom-centre */
+  /* POINT #4 */
   39% {
     top: 0;
     left: calc(100vw - 978px);
   }
 
-  /* POINT #5 — left-mid */
+  /* POINT #5 */
   49% {
     top: calc(100vh - 540px);
     left: 0px;
   }
 
-  /* POINT #6 — top-centre-ish */
+  /* POINT #6  */
   58% {
     top: calc(100vh - 220px);
     left: 155px;
   }
 
-  /* POINT #7 — top slightly right */
+  /* POINT #7 */
   74% {
     top: 120px;
     left: calc(100vw - 417px);
   }
 
-  /* POINT #8 — mid-right */
+  /* POINT #8  */
   84% {
     top: 0px;
     left: 2000x;
   }
 
-  /* POINT #9 — mid-left high */
-  99.5% {
-    top: 60px;
-    left: 0px;
-  }
-
-  /* POINT #10 — near the “f” intersection before looping */
+  /* POINT #9  */
   100% {
     top: 75px;
-    left: 30px;
+    left: 0px;
   }
 }
-
-
 
 /* @keyframes bounce {
    0% {
@@ -147,9 +126,6 @@ nav {
     top: 0;
     left: calc(100vw - 410px);
   } */
-
-  
-}
 
 /* MAIN */
 main {
