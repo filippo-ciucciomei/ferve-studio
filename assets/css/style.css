@@ -70,33 +70,7 @@ body {
 
 /* ABOUT */
 
-@media (max-width: 768px) {
-  /* medium */
-  #about-photo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-  }
-
-  #about-photo img {
-    width: 80%;
-    height: auto;
-    margin-top: 5.5rem;
-  }
-
-  /* Add top padding to the text so it does not slide under the image */
-  main .row {
-    padding-top: 35vh; /* adjust based on your image */
-  }
-}
-
 /* PORTFOLIO */
-
-#gallery .gallery-photo {
-  min-height: 600px;
-}
 
 .modal-dialog {
   max-height: 90vh; /* prevent overflow */
@@ -229,55 +203,83 @@ footer {
 }
 
 /* IMAGE TEXT ON HOVER */
-/* IMAGE CONTAINER */
 .image-container {
   position: relative;
-  display: inline-block;
-  overflow: hidden; /* prevents text overflow */
+  overflow: hidden;
 }
 
-/* IMAGE */
-.image-container img {
-  width: 100%;
+/* wrapper that shrinks to the image size */
+.image-figure {
+  position: relative; /* the overlay will be positioned relative to this */
+  display: inline-block; /* shrinkwrap to the image's dimensions */
+  line-height: 0; /* remove descender gaps around img */
+}
+
+/* keep Bootstrap responsive image behaviour inside the .image-figure */
+.image-figure img {
   display: block;
-  transition: 0.3s ease;
-  position: relative;
-  z-index: 1; /* image sits above the container */
+  max-width: 100%;
+  height: auto;
 }
 
-/* OVERLAY TEXT — centered on the image */
-.overlay-text {
+/* overlay positioned relative to the image-figure, so it matches image size */
+.image-figure .overlay-text {
   position: absolute;
-  inset: 0; /* same as top:0; right:0; bottom:0; left:0 */
+  inset: 0; /* cover exactly the image area */
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: black;
-  font-size: 1.5rem;
-
+  text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 2; /* text sits above the darkened overlay */
-  pointer-events: none; /* so hovering doesn’t flicker */
+  pointer-events: none;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
-/* DARK OVERLAY ON HOVER (using pseudo-element) */
-.image-container::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: black;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: 1; /* sits between image and text */
-}
-
-/* HOVER EFFECT – only when hovering the image */
-.image-container:hover::after {
-  opacity: 0.6; /* darken */
+/* hover brightness effect still triggered on the outer container */
+.image-container:hover img {
+  filter: brightness(30%);
 }
 
 .image-container:hover .overlay-text {
-  opacity: 1; /* show text */
+  opacity: 1;
+}
+
+/* TABLET AND MEDIUM SCREENS */
+@media (max-width: 768px) {
+  /* ABOUT PAGE MEDIUM SCREENS */
+  #about-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #about-photo img {
+    width: 80%;
+    height: auto;
+    margin-top: 5.5rem;
+  }
+
+  /* Add top padding to the text so it does not slide under the image */
+  main .row {
+    padding-top: 35vh; /* adjust based on your image */
+  }
+
+  /* GALLERY PAGE MEDIUM SCREENS */
+
+  #gallery .gallery-photo {
+    min-height: 400px;
+  }
+}
+
+/* LAPTOP AND DESKTOP SCREENS */
+@media (min-width: 992px) {
+  /* GALLERY PAGE LARGE SCREENS */
+
+  #gallery .gallery-photo {
+    min-height: 600px;
+  }
 }
