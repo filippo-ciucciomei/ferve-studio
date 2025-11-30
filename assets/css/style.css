@@ -31,7 +31,7 @@ $sky-blue: rgba(162, 210, 255, 1); */
 
 /* TO SEE THE LAYOUT */
 
-.col-md-4,
+/* .col-md-4,
 .row {
   border: solid 2px black;
   padding: 3px;
@@ -45,7 +45,7 @@ $sky-blue: rgba(162, 210, 255, 1); */
 .col-12 {
   border: solid 2px blue;
   padding: 3px;
-}
+} */
 
 /* GENERAL STYLE  */
 body {
@@ -58,6 +58,10 @@ body {
   font-family: "Fraunces", serif;
   font-weight: 251;
   font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+.logo-navbar {
+  font-size: 1.7rem;
 }
 
 .section {
@@ -91,7 +95,7 @@ body {
 /* PORTFOLIO */
 
 #gallery .gallery-photo {
-  min-height: 700px;
+  min-height: 600px;
 }
 
 .modal-dialog {
@@ -225,39 +229,55 @@ footer {
 }
 
 /* IMAGE TEXT ON HOVER */
+/* IMAGE CONTAINER */
 .image-container {
   position: relative;
   display: inline-block;
+  overflow: hidden; /* prevents text overflow */
 }
 
+/* IMAGE */
 .image-container img {
   width: 100%;
   display: block;
   transition: 0.3s ease;
+  position: relative;
+  z-index: 1; /* image sits above the container */
 }
 
-/* The overlay text */
+/* OVERLAY TEXT — centered on the image */
 .overlay-text {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0; /* same as top:0; right:0; bottom:0; left:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: black;
   font-size: 1.5rem;
+
   opacity: 0;
-  transition: 0.3s ease;
-  text-align: center;
-  pointer-events: none; /* so the hover works smoothly */
+  transition: opacity 0.3s ease;
+  z-index: 2; /* text sits above the darkened overlay */
+  pointer-events: none; /* so hovering doesn’t flicker */
 }
 
-/* On hover: image gets darker and text appears */
-.image-container:hover img {
-  filter: brightness(30%);
-  opacity: 0.4;
+/* DARK OVERLAY ON HOVER (using pseudo-element) */
+.image-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* sits between image and text */
+}
+
+/* HOVER EFFECT – only when hovering the image */
+.image-container:hover::after {
+  opacity: 0.6; /* darken */
 }
 
 .image-container:hover .overlay-text {
-  opacity: 1;
+  opacity: 1; /* show text */
 }
