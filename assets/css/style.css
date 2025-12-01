@@ -97,6 +97,11 @@ body {
   margin: auto;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* black */
+}
+
 /* INDEX */
 
 #logo {
@@ -239,7 +244,8 @@ footer {
 
 /* hover brightness effect still triggered on the outer container */
 .image-container:hover img {
-  filter: brightness(30%);
+  /* filter: brightness(30%); */
+  filter: opacity(0.3);
 }
 
 .image-container:hover .overlay-text {
