@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand FrauncesText">ferve</a>
+        <a class="navbar-brand FrauncesText logo-navbar">ferve</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +51,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >About</a
+              >
             </li>
 
             <li class="nav-link">|</li>
@@ -71,81 +73,164 @@
     </nav>
 
     <!-- MAIN -->
-    <main id="main" class="container section">
-      <div class="row">
-        <div class="col-12 col-md-6 order-2 order-md-1">
-          <h1 class="visually-hidden ">About Ferve</h1>
-          <p class="lead display-6 sub-heading-color">
-            Considered design and styling solutions for Floral, Set, Events,
-            Retail, Campaigns.
-          </p>
-          <p id="about-text" class="my-4">
-            FERVE is a fantasy name from the Italian "fervore” (fervour): it
-            embodies the vivacity of Francesca, visual creative behind this
-            multidisciplinary London studio encompassing floral design, set
-            styling, curation and art direction. Francesca has spent over a
-            decade refining her distinct taste as an architect and designer: the
-            outcome is an iridescent yet classy signature touch, rich in
-            timeless references and cutting edge experiments alike. Animated by
-            an endless curiosity, Francesca draws inspiration from vibrant
-            cities at the forefront of culture. She is influenced by
-            characterful interiors, pioneering designers, avant-garde showrooms,
-            emerging artists and masters, daring fashion brands, and any genuine
-            manifestation of talent through bold statements. Blending design
-            knowledge with aesthetic intuition, Ferve turns abstract concepts
-            into natural and spatial narratives that are rooted in seasonality
-            and sustainability, balancing soulfulness with grace.
-          </p>
-        </div>
-        <div id="about-photo" class="col-12 col-md-6 text-center text-md-start order-1 order-md-2">
-          <img
-            src="assets/images/about-portrait.webp"
-            alt="Francesca's portrait"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-    </main>
+    <main id="main" class="container-fluid section">
+      <article>
+        <div class="row">
+          <div
+            class="col-12 col-md-5 text-center text-md-start order-1 order-md-2 hidden-photo"
+          >
+            <img
+              src="assets/images/about-portrait.webp"
+              alt="hidden phto, in place just for. the layout"
+              class="img-fluid"
+            />
+          </div>
 
-    <!-- main element to hold all key sections of the game library page,
-         it is not part of the grid structure -->
-    <main>
-      <!-- New Games section -->
-      <section class="container section">
+          <div class="col-11 col-md-5 order-2 order-md-1 about-text">
+            <h1 class="visually-hidden">About Ferve</h1>
+            <p class="strong-text">
+              Considered design and styling solutions for Floral, Set, Events,
+              Retail, Campaigns.
+            </p>
+            <p>
+              FERVE is a fantasy name from the Italian "fervore” (fervour): it
+              embodies the vivacity of Francesca, visual creative behind this
+              multidisciplinary London studio encompassing floral design, set
+              styling, curation and art direction. Francesca has spent over a
+              decade refining her distinct taste as an architect and designer:
+              the outcome is an iridescent yet classy signature touch, rich in
+              timeless references and cutting edge experiments alike. Animated
+              by an endless curiosity, Francesca draws inspiration from vibrant
+              cities at the forefront of culture. She is influenced by
+              characterful interiors, pioneering designers, avant-garde
+              showrooms, emerging artists and masters, daring fashion brands,
+              and any genuine manifestation of talent through bold statements.
+              Blending design knowledge with aesthetic intuition, Ferve turns
+              abstract concepts into natural and spatial narratives that are
+              rooted in seasonality and sustainability, balancing soulfulness
+              with grace.
+            </p>
+          </div>
+          <div
+            id="about-photo"
+            class="col-12 col-md-5 text-center text-md-start order-1 order-md-2"
+          >
+            <img
+              src="assets/images/about-portrait.webp"
+              alt="Francesca's portrait"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </article>
+
+      <!-- CLIENTS -->
+      <section class="container-fluid">
         <div class="row text-center">
-          <div class="col-12 ">
-            <h2 class="display-6">Clients</h2>
-          </div>
-          <div class="col-12 col-md-6 ">
-            <div>
-            List of Clients 1
+          <!-- LEFT COL -->
+          <div class="col-12 col-md-4 about-text pt-5">
+            <div class="col-12 col-md-4">
+              <h2 class="fw-bold">Clients</h2>
             </div>
+            <ul class="list-unstyled">
+              <li class="col-12 col-md-4">Sunspel</li>
+              <br />
+              <li class="col-12 col-md-4">NOBU Hotels</li>
+              <br />
+              <li class="col-12 col-md-4">DH-PR</li>
+              <br />
+              <li class="col-12 col-md-4">Beside Communication</li>
+              <br />
+              <li class="col-12 col-md-4">NoMad</li>
+              <br />
+              <li class="col-12 col-md-4">Cecconi's</li>
+              <br />
+              <li class="col-12 col-md-4">Selfridges</li>
+              <br />
+              <li class="col-12 col-md-4">madatelier</li>
+              <br />
+              <li class="col-12 col-md-4">Slowear</li>
+              <br />
+              <li class="col-12 col-md-4">Bacardi</li>
+              <br />
+              <li class="col-12 col-md-4">Hatch</li>
+              <br />
+              <li class="col-12 col-md-4">Harrods</li>
+              <br />
+              <li class="col-12 col-md-4">& private</li>
+              <br />
+            </ul>
           </div>
 
-          <div class="col-12 col-md-6 ">
-            <div>
-            List of Clients 2
+          <!-- MID COL -->
+          <div class="col-12 col-md-4 about-text">
+            <div class="col-12 col-md-4">
+              <h2 class="fw-bold">Featured in</h2>
             </div>
+            <ul class="list-unstyled">
+              <li class="col-12 col-md-4">
+                Schön! Magazine <br />
+                <span class="fst-italic">Flowers can’t burn in the rain</span>
+              </li>
+              <br />
+              <li class="col-12 col-md-4">
+                Rakesprogress <br />
+                <span class="fst-italic">A Homely Life</span>
+              </li>
+              <br />
+              <li class="col-12 col-md-4">
+                Bricks Magazine <br />
+                <span class="fst-italic">Fluorescence</span>
+              </li>
+              <br />
+              <li class="col-12 col-md-4">
+                One Magazine <br />
+                <span class="fst-italic">Marea</span>
+              </li>
+            </ul>
           </div>
 
+          <!-- RIGHT COL -->
+          <div class="col-12 col-md-4 about-text">
+            <div class="col-12 col-md-4">
+              <h2 class="fw-bold">Awards</h2>
+            </div>
+            <ul class="list-unstyled">
+              <li class="col-12 col-md-4">
+                Merit | Sunspel <br />
+                <span class="fst-italic">Chelsea in Bloom 2025</span>
+              </li>
+              <br />
+              <li class="col-12 col-md-4">
+                Merit | Slowear <br />
+                <span class="fst-italic">Chelsea in Bloom 2025</span>
+              </li>
+              <br />
+              <li class="col-12 col-md-4">
+                Merit | Sunspel <br />
+                <span class="fst-italic">Chelsea in Bloom 2024</span>
+              </li>
+            </ul>
+            <br /><br /><br /><br /><br /><br />
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- footer / contact section -->
+    <!-- footer -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer class="mt-auto">
       <div class="container section">
-        <div class="row justify-content-center my-3 mx-2 ">
-          
-          <div class="col-3 text-start">
-          </div>
+        <div class="row justify-content-center my-3 mx-2">
+          <div class="col-3 text-start"></div>
 
-          <div class="col-6 text-center">© <span class="FrauncesText">ferve</span>. All rights reserved.
+          <div class="col-6 text-center">
+            © <span class="FrauncesText">ferve</span>. All rights reserved.
           </div>
 
           <div class="col-3 text-end">
             <i class="fa-brands fa-instagram ms-2"></i>
             <i class="fa-brands fa-tiktok ms-2"></i>
-
           </div>
         </div>
       </div>

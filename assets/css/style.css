@@ -29,9 +29,9 @@ font-family: 'Fraunces'; */
 /* TO SEE THE LAYOUT */
 
 /* .col-md-4,
+.col-md-4,
 .row {
   border: solid 2px black;
-  padding: 3px;
 }
 
 .row {
@@ -39,14 +39,15 @@ font-family: 'Fraunces'; */
   padding: 3px;
 }
 
-.col-12 {
+.col-12,
+.col-1,
+.col-4,
+.col-3 {
   border: solid 2px blue;
-  padding: 3px;
 } */
 
 /* GENERAL STYLE  */
 body {
-  background-color: pink;
   font-family: "Arial";
 }
 
@@ -65,7 +66,41 @@ body {
   margin-top: 3rem;
 }
 
+.hide-small {
+  display: none;
+}
+
 /* ABOUT */
+
+.hidden-photo {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  visibility: hidden;
+}
+
+#about-photo {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+}
+
+#about-photo img {
+  width: 90%;
+  height: auto;
+}
+
+.about-text {
+  width: 90%;
+  margin-left: 5%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.strong-text {
+  font-size: 1.5rem;
+}
 
 /* PORTFOLIO */
 
@@ -196,12 +231,16 @@ main {
   padding-left: 19px;
   padding-right: 19px;
   flex: 1;
+  padding-bottom: 80px;
 }
 
 /* FOOTER */
 footer {
-  position: sticky;
+  position: fixed;
   bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 /* IMAGE TEXT ON HOVER */
@@ -238,12 +277,10 @@ footer {
   padding: 1rem;
   box-sizing: border-box;
 
-  /* wrapping fixes */
+  /* these 5 let the text wrap */
   white-space: normal; /* allow normal wrapping */
   overflow-wrap: break-word; /* break long words */
   word-wrap: break-word; /* legacy safe fallback */
-
-  /* crucial for flex children to be allowed to shrink/wrap */
   min-width: 0;
   line-height: 1.2; /* reset any inherited 0 line-height */
 }
@@ -259,25 +296,27 @@ footer {
 }
 
 /* TABLET AND MEDIUM SCREENS */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   /* ABOUT PAGE MEDIUM SCREENS */
+
+  /* GENERAL MEDIUM STYLE */
+
+  .hide-small {
+    display: block;
+  }
+
+  /* ABOUT MEDIUM STYLE */
+
   #about-photo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
+    position: static;
+    width: 50vw;
+    z-index: 999;
   }
 
   #about-photo img {
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-top: 5.5rem;
-  }
-
-  /* Add top padding to the text so it does not slide under the image */
-  main .row {
-    padding-top: 35vh; /* adjust based on your image */
+    margin-top: 1rem;
   }
 
   /* GALLERY PAGE MEDIUM SCREENS */
