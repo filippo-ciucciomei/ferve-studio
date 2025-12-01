@@ -17,17 +17,14 @@ font-size: 13.8vw;
 font-family: 'Fraunces'; */
 
 /* COLORS */
-/* CSS HEX */
-/* --pastel-petal: #ffc8ddff;
---baby-pink: #ffafccff;
---icy-blue: #bde0feff;
---sky-blue: #a2d2ffff; */
-
-/* SCSS RGB */
-/* $pastel-petal: rgba(255, 200, 221, 1);
-$baby-pink: rgba(255, 175, 204, 1);
-$icy-blue: rgba(189, 224, 254, 1);
-$sky-blue: rgba(162, 210, 255, 1); */
+/* HEX */
+/* --carbon-black: #161A1D;
+--dark-red: #660708;
+--red: #BA181B;
+--grey: #D3D3D3; 
+--light-grey: #F5F3F4;
+--white: #FFFFFF;
+*/
 
 /* TO SEE THE LAYOUT */
 
@@ -230,7 +227,7 @@ footer {
 /* overlay positioned relative to the image-figure, so it matches image size */
 .image-figure .overlay-text {
   position: absolute;
-  inset: 0; /* cover exactly the image area */
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,6 +237,15 @@ footer {
   pointer-events: none;
   padding: 1rem;
   box-sizing: border-box;
+
+  /* wrapping fixes */
+  white-space: normal; /* allow normal wrapping */
+  overflow-wrap: break-word; /* break long words */
+  word-wrap: break-word; /* legacy safe fallback */
+
+  /* crucial for flex children to be allowed to shrink/wrap */
+  min-width: 0;
+  line-height: 1.2; /* reset any inherited 0 line-height */
 }
 
 /* hover brightness effect still triggered on the outer container */
