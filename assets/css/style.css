@@ -56,6 +56,7 @@ body {
   font-family: "Fraunces", serif;
   font-weight: 251;
   font-variation-settings: "SOFT" 0, "WONK" 0;
+  font-size: 1.2rem;
 }
 
 .logo-navbar {
@@ -64,6 +65,7 @@ body {
 
 .section {
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
 .hide-small {
@@ -71,32 +73,6 @@ body {
 }
 
 /* ABOUT */
-
-.hidden-photo {
-  width: 90%;
-  height: auto;
-  margin-left: 5%;
-  visibility: hidden;
-}
-
-#about-photo {
-  position: fixed;
-  top: 75px;
-  left: 0;
-  width: 100%;
-}
-
-#about-photo img {
-  width: 90%;
-  height: auto;
-}
-
-.about-text {
-  width: 90%;
-  margin-left: 5%;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.9);
-}
 
 .strong-text {
   font-size: 1.5rem;
@@ -295,10 +271,37 @@ footer {
   opacity: 1;
 }
 
+/* MOBILE SCREENS */
+@media (max-width: 768px) {
+  .hidden-photo {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    visibility: hidden;
+  }
+
+  #about-photo {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+  }
+
+  #about-photo img {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-text {
+    width: 90%;
+    margin-left: 5%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
 /* TABLET AND MEDIUM SCREENS */
 @media (min-width: 768px) {
-  /* ABOUT PAGE MEDIUM SCREENS */
-
   /* GENERAL MEDIUM STYLE */
 
   .hide-small {
@@ -307,17 +310,28 @@ footer {
 
   /* ABOUT MEDIUM STYLE */
 
-  #about-photo {
-    position: static;
-    width: 50vw;
-    z-index: 999;
+  .hidden-photo {
+    display: none;
   }
 
-  #about-photo img {
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* makes the image crop to fill */
+    object-position: center; /* adjust if you want top/center/bottom */
+  }
+
+  /* #about-photo {
+    position: static !important;
+    width: 50vw;
+    z-index: 999;
+  } */
+
+  /* #about-photo img {
     width: 100%;
     height: auto;
     margin-top: 1rem;
-  }
+  } */
 
   /* GALLERY PAGE MEDIUM SCREENS */
 

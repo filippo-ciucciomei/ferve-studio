@@ -73,9 +73,10 @@
     </nav>
 
     <!-- MAIN -->
-    <main id="main" class="container-fluid section">
+    <main id="main" class="container">
       <article>
-        <div class="row">
+        <div class="row align-items-stretch section">
+          <!-- HIDDEN PHOTO - IN SMALL SCREENS STAYS IN FLOW, IN MEDIUM AND LARGER DISAPPEAR FROM FLOW -->
           <div
             class="col-12 col-md-5 text-center text-md-start order-1 order-md-2 hidden-photo"
           >
@@ -86,7 +87,10 @@
             />
           </div>
 
-          <div class="col-11 col-md-5 order-2 order-md-1 about-text">
+          <div
+            id="about-text"
+            class="col-11 col-md-6 order-2 order-md-1 about-text"
+          >
             <h1 class="visually-hidden">About Ferve</h1>
             <p class="strong-text">
               Considered design and styling solutions for Floral, Set, Events,
@@ -113,7 +117,7 @@
           </div>
           <div
             id="about-photo"
-            class="col-12 col-md-5 text-center text-md-start order-1 order-md-2"
+            class="col-12 col-md-6 text-center text-md-start order-1 order-md-2"
           >
             <img
               src="assets/images/about-portrait.webp"
@@ -125,65 +129,49 @@
       </article>
 
       <!-- CLIENTS -->
-      <section class="container-fluid">
+      <section class="container section">
         <div class="row text-center">
           <!-- LEFT COL -->
-          <div class="col-12 col-md-4 about-text pt-5">
-            <div class="col-12 col-md-4">
-              <h2 class="fw-bold">Clients</h2>
-            </div>
+          <div class="col-12 col-lg-4 about-text text-center">
+            <h2 class="fw-bold h5">Clients</h2>
+
             <ul class="list-unstyled">
-              <li class="col-12 col-md-4">Sunspel</li>
-              <br />
-              <li class="col-12 col-md-4">NOBU Hotels</li>
-              <br />
-              <li class="col-12 col-md-4">DH-PR</li>
-              <br />
-              <li class="col-12 col-md-4">Beside Communication</li>
-              <br />
-              <li class="col-12 col-md-4">NoMad</li>
-              <br />
-              <li class="col-12 col-md-4">Cecconi's</li>
-              <br />
-              <li class="col-12 col-md-4">Selfridges</li>
-              <br />
-              <li class="col-12 col-md-4">madatelier</li>
-              <br />
-              <li class="col-12 col-md-4">Slowear</li>
-              <br />
-              <li class="col-12 col-md-4">Bacardi</li>
-              <br />
-              <li class="col-12 col-md-4">Hatch</li>
-              <br />
-              <li class="col-12 col-md-4">Harrods</li>
-              <br />
-              <li class="col-12 col-md-4">& private</li>
-              <br />
+              <li>Sunspel</li>
+              <li>NOBU Hotels</li>
+              <li>DH-PR</li>
+              <li>Beside Communication</li>
+              <li>NoMad</li>
+              <li>Cecconi's</li>
+              <li>Selfridges</li>
+              <li>madatelier</li>
+              <li>Slowear</li>
+              <li>Bacardi</li>
+              <li>Hatch</li>
+              <li>Harrods</li>
+              <li>& private</li>
             </ul>
           </div>
 
           <!-- MID COL -->
-          <div class="col-12 col-md-4 about-text">
-            <div class="col-12 col-md-4">
-              <h2 class="fw-bold">Featured in</h2>
-            </div>
+          <div class="col-12 col-lg-4 about-text">
+            <h2 class="fw-bold h5">Featured in</h2>
             <ul class="list-unstyled">
-              <li class="col-12 col-md-4">
+              <li>
                 Schön! Magazine <br />
                 <span class="fst-italic">Flowers can’t burn in the rain</span>
               </li>
               <br />
-              <li class="col-12 col-md-4">
+              <li>
                 Rakesprogress <br />
                 <span class="fst-italic">A Homely Life</span>
               </li>
               <br />
-              <li class="col-12 col-md-4">
+              <li>
                 Bricks Magazine <br />
                 <span class="fst-italic">Fluorescence</span>
               </li>
               <br />
-              <li class="col-12 col-md-4">
+              <li>
                 One Magazine <br />
                 <span class="fst-italic">Marea</span>
               </li>
@@ -191,22 +179,20 @@
           </div>
 
           <!-- RIGHT COL -->
-          <div class="col-12 col-md-4 about-text">
-            <div class="col-12 col-md-4">
-              <h2 class="fw-bold">Awards</h2>
-            </div>
+          <div class="col-12 col-lg-4 about-text">
+            <h2 class="fw-bold h5">Awards</h2>
             <ul class="list-unstyled">
-              <li class="col-12 col-md-4">
+              <li>
                 Merit | Sunspel <br />
                 <span class="fst-italic">Chelsea in Bloom 2025</span>
               </li>
               <br />
-              <li class="col-12 col-md-4">
+              <li>
                 Merit | Slowear <br />
                 <span class="fst-italic">Chelsea in Bloom 2025</span>
               </li>
               <br />
-              <li class="col-12 col-md-4">
+              <li>
                 Merit | Sunspel <br />
                 <span class="fst-italic">Chelsea in Bloom 2024</span>
               </li>
@@ -220,7 +206,7 @@
     <!-- footer -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer class="mt-auto">
-      <div class="container section">
+      <div class="container">
         <div class="row justify-content-center my-3 mx-2">
           <div class="col-3 text-start"></div>
 
