@@ -80,8 +80,8 @@
     <main id="contact" class="container section">
       <div class="row g-3 justify-content-between">
         <!-- LEFT COL -->
-        <div class="col-12 col-md-6 mb-5">
-          <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+          <form class="row">
             <div class="col-12 col-md-6 mb-3">
               <label for="form-name" class="form-label">Full name</label>
               <input
@@ -171,6 +171,29 @@
                 required
               ></textarea>
 
+              <div class="col-12 mt-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck2"
+                    required
+                  />
+
+                  <label class="form-check-label" for="invalidCheck2">
+                    Agree to
+                    <a
+                      href="#FerveT&C"
+                      data-bs-toggle="modal"
+                      data-bs-target="#FerveT&C"
+                    >
+                      terms and conditions</a
+                    >.
+                  </label>
+                </div>
+              </div>
+
               <!-- BUTTON -->
               <div class="col-12 mt-3 mb-3">
                 <button class="btn btn-primary" type="submit">
@@ -178,7 +201,7 @@
                 </button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
 
         <!-- RIGHT COL -->
@@ -222,6 +245,84 @@
         </div>
       </div>
     </footer>
+
+    <!-- T&C MODAL -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="FerveT&C"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="FerveT&C">Ferve Data Policy</h1>
+          </div>
+          <div class="modal-body my-3 mx-3">
+            <div>
+              At Ferve Studio, we respect your privacy and are committed to
+              protecting your personal information.
+              <br />
+              <br />
+
+              <ul class="list-unstyled">
+                <li>
+                  <span class="fw-bold">How we use your data</span><br />
+                  When you provide us with your contact details (such as your
+                  name, email address, or phone number), we store this
+                  information securely in our internal database. We use your
+                  data only for purposes related to our services, including
+                  order updates, customer communication, and occasional
+                  marketing messages about new products, events, or promotions.
+                </li>
+                <br />
+
+                <li>
+                  <span class="fw-bold">Sharing your data</span><br />
+                  We do not sell, trade, or share your personal information with
+                  third parties. Your details are used solely by Ferve Studio.
+                </li>
+                <br />
+                <li>
+                  <span class="fw-bold">Marketing communications</span><br />
+                  If you receive marketing emails or messages from us, you can
+                  opt out at any time.
+                </li>
+                <br />
+                <li>
+                  <span class="fw-bold">Your rights</span><br />
+                  If you would like your data to be removed from our records or
+                  want to update any information we hold about you, please
+                  contact us at hello@ferve.studio and we will process your
+                  request promptly.
+                </li>
+                <br />
+                <li>
+                  <span class="fw-bold">Updates</span><br />
+                  Any changes to this policy will be posted on our website.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script
