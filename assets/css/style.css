@@ -341,4 +341,12 @@ footer {
   #gallery .gallery-photo {
     min-height: 600px;
   }
+
+  /* ABOUT SECTION */
+  #about-photo img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover; /* Fill and crop */
+    object-position: bottom center; /* Adjust crop (top / center / bottom) */
+  }
 }
