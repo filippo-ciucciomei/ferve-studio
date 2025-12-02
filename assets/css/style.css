@@ -30,12 +30,15 @@ font-family: 'Fraunces'; */
 
 /* .col-md-4,
 .col-md-4,
-.row {
-  border: solid 2px black;
+.row,
+.col-5,
+.col-6,
+.col-md-6 {
+  border: solid 1px black;
 }
 
 .row {
-  border: solid 2px yellow;
+  border: solid 1px yellow;
   padding: 3px;
 }
 
@@ -43,7 +46,7 @@ font-family: 'Fraunces'; */
 .col-1,
 .col-4,
 .col-3 {
-  border: solid 2px blue;
+  border: solid 1px blue;
 } */
 
 /* GENERAL STYLE  */
