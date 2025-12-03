@@ -77,9 +77,13 @@ nav {
   z-index: 9999;
 }
 
-.navbar a,
+.navbar a {
+  color: var(--color-primary) !important;
+}
+
 .navbar .nav-link {
   color: var(--color-primary) !important;
+  font-size: 1.3rem;
 }
 
 .navbar .nav-link:hover {
@@ -144,10 +148,14 @@ nav {
   font-family: "Fraunces", serif;
   text-align: center;
   z-index: 9999;
-  color: #660708;
+  color: var(--color-secondary);
 }
 
 /* BACKGROUND PHOTOS INDEX */
+
+.background-flowers img {
+  opacity: 0.8;
+}
 
 @keyframes fadeIn {
   0% {
@@ -441,70 +449,17 @@ nav {
   z-index: 999;
 }
 
-/* STAGGERED ANIMATION OF THE FLOWERS */
-.flower:nth-child(1) {
-  animation-delay: 0s;
-  top: 10%;
-  left: 5%;
-}
-
-/* #floating-logo {
+/* FLOWER 28 */
+.flower28 {
   position: fixed;
-  top: 18px;
-  width: 80vw;
-  height: 80vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  animation: bouncePath 40s linear infinite;
-} */
-
-/*
-@keyframes bouncePath {
-  0% {
-    top: 75px;
-    left: 0px;
-  }
-
-  19% {
-    top: 245px;
-    left: calc(100vw - 417px);
-  }
-
-  27% {
-    top: calc(100vh - 220px);
-    left: calc(100vw - 707px);
-  }
-
-  39% {
-    top: 0;
-    left: calc(100vw - 978px);
-  }
-
-  49% {
-    top: calc(100vh - 540px);
-    left: 0px;
-  }
-
-  58% {
-    top: calc(100vh - 220px);
-    left: 155px;
-  }
-
-  74% {
-    top: 120px;
-    left: calc(100vw - 417px);
-  }
-
-  84% {
-    top: 0px;
-    left: 2000x;
-  }
-
-  100% {
-    top: 75px;
-    left: 0px;
-  }
-} */
+  top: -30px;
+  left: 650px;
+  width: 350px;
+  rotate: calc(180deg);
+  animation: fadeIn 8.8s ease-out infinite;
+  animation-delay: 9.4s;
+  z-index: 999;
+}
 
 /* @keyframes bounce {
    0% {
@@ -545,7 +500,7 @@ footer {
   z-index: 999;
 }
 
-/* IMAGE TEXT ON HOVER */
+/* GALLERY */
 .image-container {
   position: relative;
   overflow: hidden;
@@ -634,6 +589,11 @@ footer {
     display: block;
   }
 
+  /* INDEX MEDIUM STYLE */
+  #logo {
+    font-size: 200px;
+  }
+
   /* ABOUT MEDIUM STYLE */
 
   .hidden-photo {
@@ -662,6 +622,71 @@ footer {
 
 /* LAPTOP AND DESKTOP SCREENS */
 @media (min-width: 992px) {
+  /* INDEX LARGE STYLE */
+  #logo {
+    font-size: 250px;
+  }
+
+  #floating-logo {
+    position: fixed;
+    top: -30px;
+    left: 30vw;
+    animation: bouncePath 40s linear infinite;
+    z-index: 9999;
+  }
+  /*
+  TOP = -30px;
+  BOTTOM = calc(100vh - 278px);
+  RIGHT = calc(100vw - 430px);
+  LEFT = -11px;
+*/
+  @keyframes bouncePath {
+    0% {
+      top: 50px;
+      left: -11px;
+    }
+    /* FIRST MOVE horizontal */
+    18% {
+      top: calc(100vh - 350px);
+      left: calc(100vw - 430px);
+    }
+    /* SECOND MOVE  vertical*/
+    26% {
+      top: calc(100vh - 278px);
+      left: calc(100vw - 707px);
+    }
+    /* THIRD MOVE vertical */
+    39% {
+      top: -30px;
+      left: 200px;
+    }
+    /* FOURTH MOVE vertical */
+    45% {
+      top: calc(100vh - 540px);
+      left: 0px;
+    }
+    /* FIFT MOVE horizntal */
+    54% {
+      top: calc(100vh - 278px);
+      left: 155px;
+    }
+    /* SIXTH MOVE horizontal */
+    74% {
+      top: 120px;
+      left: calc(100vw - 430px);
+    }
+    /* SEVENT MOVE vetical*/
+    87% {
+      top: -30px;
+      left: 30vw;
+    }
+    /* EIGHT MOVE */
+    100% {
+      top: 50px;
+      left: -11px;
+    }
+  }
+
   /* GALLERY PAGE LARGE SCREENS */
 
   #gallery .gallery-photo {
