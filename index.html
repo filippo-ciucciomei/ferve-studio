@@ -28,11 +28,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100 min-vw-100">
     <!-- HEADER -->
     <nav class="navbar navbar-expand-sm bg-body-tertiary">
-      <div class="container bounce-area">
-        <a class="navbar-brand FrauncesText" href="#about">ferve</a>
+      <div class="container">
+        <a class="navbar-brand FrauncesText logo-navbar" href="index.html">ferve</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,22 +45,21 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <!--ms-auto = applies margin at the left, pushing text to the right-->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Gallery</a
-              >
-            </li>
+            <li class="nav-link">|</li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-link">|</li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -72,16 +71,20 @@
     <!-- Things to try:
  make the font size in px so it will always be the same size, and can calculate vh and vw - px
  make flowers appear and then Ferve on top
--->
+ -->
 
-    <main>
-      <section id="floating-logo" class="container">
-        <p id="logo">ferve</p>
-      </section>
-      <img src="assets/images/background01.png" alt="Ferve Studio Logo" />
+
+<!-- LOGO -->
+    <main class="flex-grow-1 d-flex">
+      <div class="container-fluid d-flex flex-grow-1 justify-content-center align-items-center">
+        <div class="row flex-grow-1">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+              <div id="logo" class="FrauncesText">ferve</div>
+        </div>
+      </div>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER REMOVED FROM LANDING PAGE-->
     <!-- <footer id="footer" class="container pb-3">
       <div class="row align-items-center"> -->
     <!-- Empty spacer on desktop -->
@@ -101,6 +104,120 @@
         </div>
       </div>
     </footer> -->
+
+
+
+    <!-- IMAGES - BELOW THE REST IN CASE THEY FAIL TO LOAD -->
+ <div class="background-flowers">
+
+  <img src="assets/images/background03.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower27" />
+
+<img src="assets/images/background06.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower26" />
+  
+<img src="assets/images/background08.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower16" />
+
+  <img src="assets/images/background03.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower19" />
+
+<img src="assets/images/background04.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower20" />
+
+<img src="assets/images/background05.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower21" />
+
+<img src="assets/images/background06.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower22" />
+  
+<img src="assets/images/background07.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower23" />
+
+<img src="assets/images/background08.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower24" />
+
+  <img src="assets/images/background01.png" 
+    alt="image of a flower as background of the landing page" 
+    class="flower1" />
+ <img src="assets/images/background02.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower2" />
+
+<img src="assets/images/background03.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower3" />
+
+  <img src="assets/images/background04.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower4" />
+
+  <img src="assets/images/background02.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower18" />
+    
+<img src="assets/images/background05.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower5" />
+
+<img src="assets/images/background06.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower6" />
+
+<img src="assets/images/background07.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower7" />
+
+<img src="assets/images/background08.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower8" />
+
+<img src="assets/images/background01.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower9" />
+
+<img src="assets/images/background02.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower10" />
+
+<img src="assets/images/background03.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower11" />
+
+<img src="assets/images/background04.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower12" />
+
+<img src="assets/images/background05.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower13" />
+
+<img src="assets/images/background06.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower14" />
+
+<img src="assets/images/background07.png" 
+  alt="image of a flower as background of the landing page" 
+  class="flower15" />
+
+<img src="assets/images/background01.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower17" />
+
+<img src="assets/images/background08.png"
+  alt="image of a flower as background of the landing page" 
+  class="flower25" />
+
+ </div>
 
     <!-- BOOTSTRAP JS LINK -->
     <script

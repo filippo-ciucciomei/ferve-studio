@@ -26,6 +26,14 @@ font-family: 'Fraunces'; */
 --white: #FFFFFF;
 */
 
+:root {
+  --color-primary: #660708; /* dark red */
+  --color-secondary: #ba181b; /* red */
+  --dark-background: #d3d3d3; /* grey */
+  --light-background: #f5f3f4; /* light grey */
+  --carbon-black: #161a1d; /* carbon black */
+}
+
 /* TO SEE THE LAYOUT */
 
 /* .col-md-4,
@@ -67,6 +75,15 @@ body {
 
 nav {
   z-index: 9999;
+}
+
+.navbar a,
+.navbar .nav-link {
+  color: var(--color-primary) !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-secondary) !important;
 }
 
 .logo-navbar {
@@ -422,6 +439,13 @@ nav {
   animation: fadeIn 8.8s ease-out infinite;
   animation-delay: 16.4s;
   z-index: 999;
+}
+
+/* STAGGERED ANIMATION OF THE FLOWERS */
+.flower:nth-child(1) {
+  animation-delay: 0s;
+  top: 10%;
+  left: 5%;
 }
 
 /* #floating-logo {
