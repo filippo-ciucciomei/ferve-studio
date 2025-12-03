@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Burst</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        background: #fff;
+      }
+
+      .word {
+        font-size: 10vw; /* adjust for mobile first */
+        font-weight: bold;
+        opacity: 0;
+        position: absolute;
+        animation: appear 2s forwards;
+      }
+
+      /* staggered animations */
+      .word:nth-child(1) {
+        animation-delay: 0s;
+        top: 10%;
+        left: 5%;
+      }
+      .word:nth-child(2) {
+        animation-delay: 0.1s;
+        top: 15%;
+        left: 20%;
+      }
+      .word:nth-child(3) {
+        animation-delay: 0.2s;
+        top: 25%;
+        left: 35%;
+      }
+      .word:nth-child(4) {
+        animation-delay: 0.3s;
+        top: 35%;
+        left: 50%;
+      }
+      .word:nth-child(5) {
+        animation-delay: 0.4s;
+        top: 50%;
+        left: 10%;
+      }
+      /* ...add as many as you want */
+
+      @keyframes appear {
+        0% {
+          opacity: 0;
+          transform: scale(0.8) rotate(-5deg);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05) rotate(2deg);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="word">Filippo</div>
+    <div class="word">Filippo</div>
+    <div class="word">Filippo</div>
+    <div class="word">Filippo</div>
+    <div class="word">Filippo</div>
+    <div class="word">Filippo</div>
+  </body>
+</html>
