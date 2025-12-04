@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferve Studio</title>
+
+    <!-- ADD THE FLOWER ICON FOR THE BROWSER -->
+
+    <!-- ADD KEYWORDS AND OTHER SEO ELEMENTS -->
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <!-- classes on body set to work with mt-auto on footer to 
+    ensure it always stays at the bottom of the page -->
+
+  <body class="d-flex flex-column min-vh-100">
+   
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary  custom-navbar">
+      <div class="container">
+        <a class="navbar-brand FrauncesText logo-navbar" href="index.html">ferve</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+            <li class="nav-link">|</li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-link">|</li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Galler y -->
+    <main id="gallery" class="container section">
+      <div class="row">
+
+        <div class="col-12 col-md-4 hide-small"></div>
+
+
+        <div class="col-12 col-md-6">
+         <div class="image-container gallery-photo d-flex align-items-center justify-content-start"
+         data-bs-toggle="modal"
+         data-bs-target="#GalleryModal"
+         style="cursor: pointer;">
+           <div class="image-figure">    
+         <img
+            src="assets/images/tablescape01.jpg"
+            alt="A photo of an event tablescape"
+            class="img-fluid"
+          />
+          <div class="overlay-text">Tablescape<br>at Claridges Hotel</div>
+         </div>
+         </div>
+        </div>
+
+        <div class="col-12 col-md-2 hide-small"></div>
+
+
+         <div class="col-12 col-md-6">
+         <div class="image-container gallery-photo d-flex align-items-start justify-content-start"
+         data-bs-toggle="modal"
+         data-bs-target="#GalleryModal"
+         style="cursor: pointer;">
+         <div class="image-figure">  
+            <img
+            src="assets/images/tablescape09.JPG"
+            alt="A photo of an event tablescape with flowers"
+            class="img-fluid mb-5"
+          />
+          <div class="overlay-text">30th Birthday Party<br>Private Client</div>
+         </div>
+         </div>
+        </div>
+
+        <div class="col-12 col-md-2 hide-small"></div>
+
+       
+        <div class="col-12 col-md-4">
+         <div class="image-container gallery-photo d-flex align-items-end"
+         data-bs-toggle="modal"
+         data-bs-target="#GalleryModal"
+         style="cursor: pointer;">
+        <div class="image-figure">    
+         <img
+            src="assets/images/tablescape10.webp"
+            alt="A photo of an event tablescape with red flowers"
+            class="img-fluid"
+          />
+          <div class="overlay-text">Tablescape<br>Private Client</div>
+         </div>
+         </div>
+        </div>
+
+        <div class="col-12 col-md-1 hide-small"></div>
+
+        <div class="col-12 col-md-5">
+         <div class="image-container gallery-photo d-flex align-items-center "
+         data-bs-toggle="modal"
+         data-bs-target="#GalleryModal"
+         style="cursor: pointer;">
+         <div class="image-figure">  
+            <img
+            src="assets/images/tablescape03.jpg"
+            alt="A photo of an event tablescape"
+            class="img-fluid"
+          />
+          <div class="overlay-text">Private Event</div>
+         </div>
+         </div>
+        </div>
+
+        <div class="col-12 col-md-1 hide-small"></div>
+
+        <div class="col-12 col-md-4 ">
+         <div class="image-container gallery-photo d-flex align-items-end justify-content-center"
+         data-bs-toggle="modal"
+         data-bs-target="#GalleryModal"
+         style="cursor: pointer;">
+         <div class="image-figure">  
+            <img
+            src="assets/images/tablescape08.JPG"
+            alt="A photo of an event tablescape"
+            class="img-fluid"
+          />
+          <div class="overlay-text">30th Birthday Party<br>Private Client</div>
+         </div>
+         </div>
+        </div>
+
+        <div class="col-12 col-md-1 hide-small"></div>
+        <div class="col-12 col-md-3 hide-small"></div>
+
+        <div class="col-12 col-md-6 ">
+         <div class="image-container gallery-photo d-flex align-items-center"
+         data-bs-toggle="modal"
+         data-bs-target="#GalleryModal"
+         style="cursor: pointer;">
+         <div class="image-figure">  
+            <img
+            src="assets/images/tablescape11.JPG"
+            alt="A photo of an event tablescape"
+            class="img-fluid"
+          />
+          <div class="overlay-text">30th Birthday Party<br>Private Client</div>
+         </div>
+         </div>
+        </div>
+
+        <div class="col-12 col-md-3 hide-small"></div>
+
+      </div>
+    </main>
+
+    <!-- main element to hold all key sections of the game library page,
+         it is not part of the grid structure -->
+    <main>
+     
+    <!-- footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer class="mt-auto">
+      <div class="container ">
+        <div class="row justify-content-center my-3 mx-2 ">
+          
+          <div class="col-3 text-start">
+          </div>
+
+          <div class="col-6 text-center">© <span class="FrauncesText">ferve</span>. All rights reserved.
+          </div>
+
+          <div class="col-3 text-end">
+            <i class="fa-brands fa-instagram ms-2"></i>
+            <i class="fa-brands fa-tiktok ms-2"></i>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="GalleryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        
+        <!-- CAROUSEL INSIDE THE MODAL -->
+
+        <div id="carouselFerve" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/tablescape01.jpg" class="d-block carousel-img" alt="Tablescape">
+    </div>
+    
+    <div class="carousel-item">
+      <img src="assets/images/tablescape09.jpg" class="d-block carousel-img" alt="Floral Sculpture">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/tablescape10.webp" class="d-block carousel-img" alt="Floral Sculpture">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/tablescape03.jpg" class="d-block carousel-img" alt="Floral Sculpture">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/tablescape08.JPG" class="d-block carousel-img" alt="Floral Sculpture">
+    </div>
+
+    <div class="carousel-item">
+      <img src="assets/images/tablescape11.JPG" class="d-block carousel-img" alt="Floral Sculpture">
+    </div>
+
+    
+
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselFerve" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselFerve" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/aa9af45995.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
