@@ -79,6 +79,20 @@ nav {
   z-index: 9999;
 }
 
+/* TO CENTER THE DROPDOWN MENU */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+}
+
+/* TO MAKE THE LANDING NAVBAR SEMI-TRANSPARENT */
+
 .landing-navbar {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
