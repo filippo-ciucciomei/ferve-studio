@@ -67,6 +67,10 @@ body {
   color: var(--carbon-black);
 }
 
+a {
+  color: var(--color-primary);
+}
+
 /* ADDS FERVE'S FONT TO THE LOGO */
 .FrauncesText {
   font-family: "Fraunces", serif;
@@ -91,6 +95,19 @@ nav {
   border: none;
 }
 
+.modal {
+  z-index: 99999;
+}
+
+.modal-content {
+  background-color: var(--light-background) !important;
+  font-size: 0.8rem;
+}
+
+.modal-header {
+  color: var(--color-primary);
+}
+
 /* TO MAKE THE LANDING NAVBAR SEMI-TRANSPARENT */
 
 .landing-navbar {
@@ -101,13 +118,19 @@ nav {
   background-color: var(--light-background) !important;
 }
 
+/* 
+OLD NAVBAR STYLE. IT WORKED BUT ALIGNMENT WAS OFF
+.navbar-brand {
+  padding: 0px !important;
+}
+
 .navbar a {
   color: var(--color-primary) !important;
 }
 
 .navbar .nav-link {
   color: var(--color-primary) !important;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .navbar .nav-link:hover {
@@ -115,8 +138,46 @@ nav {
 }
 
 .logo-navbar {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+} */
+
+/* --- LOGO --- */
+.navbar-brand {
+  padding: 0 !important; /* removes Bootstrap’s default vertical padding */
+  display: flex;
+  align-items: center; /* vertical centering */
 }
+
+.logo-navbar {
+  font-size: 1.8rem;
+}
+
+/* --- NAVBAR ALIGNMENT FIX --- */
+.landing-navbar .container {
+  display: flex;
+  align-items: center; /* align logo + menu perfectly */
+}
+
+/* --- NAV LINKS --- */
+.navbar a {
+  color: var(--color-primary) !important;
+}
+
+.navbar .nav-link {
+  color: var(--color-primary) !important;
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center; /* vertically center links and separators */
+  padding-top: 0; /* match logo's padding */
+  padding-bottom: 0;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-secondary) !important;
+}
+
+/* NEW NAVBAR CODE FINISHES HERE */
 
 .section {
   margin-top: 3rem;
@@ -564,6 +625,12 @@ footer {
   width: 100%;
   z-index: 999;
   background-color: rgba(245, 243, 244, 0.9);
+  color: var(--color-primary);
+}
+
+footer a {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 /* GALLERY */
