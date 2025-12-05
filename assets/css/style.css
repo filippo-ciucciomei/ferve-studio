@@ -36,7 +36,7 @@ font-family: 'Fraunces'; */
 
 /* TO SEE THE LAYOUT */
 
-/* .col-md-4,
+.col-md-4,
 .col-md-4,
 .row,
 .col-5,
@@ -55,7 +55,7 @@ font-family: 'Fraunces'; */
 .col-4,
 .col-3 {
   border: solid 1px blue;
-} */
+}
 
 /* GENERAL STYLE  */
 body {
@@ -83,16 +83,9 @@ nav {
   z-index: 9999;
 }
 
-/* TO CENTER THE DROPDOWN MENU */
+/* TO CENTER THE DROPDOWN TEXT */
 .nav-item.dropdown {
   position: relative;
-}
-
-.nav-item.dropdown .dropdown-menu {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: none;
 }
 
 .modal {
@@ -631,6 +624,7 @@ footer {
 footer a {
   color: var(--color-primary);
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 /* GALLERY */
@@ -694,6 +688,12 @@ footer a {
     visibility: hidden;
   }
 
+  /* TO CHANHE THE GALLERY LAYOUT ON SMALL SCREENS */
+
+  .hide-small {
+    display: none !important;
+  }
+
   #about-photo {
     position: fixed;
     top: 75px;
@@ -733,6 +733,14 @@ footer a {
   }
 
   /* ABOUT MEDIUM STYLE */
+
+  /* TO CENTER THE DROPDOWN BOX ON MD SCREENS */
+  .nav-item.dropdown .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+  }
 
   .hidden-photo {
     display: none;
