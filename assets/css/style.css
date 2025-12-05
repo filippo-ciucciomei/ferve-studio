@@ -36,7 +36,7 @@ font-family: 'Fraunces'; */
 
 /* TO SEE THE LAYOUT */
 
-.col-md-4,
+/* .col-md-4,
 .col-md-4,
 .row,
 .col-5,
@@ -55,7 +55,7 @@ font-family: 'Fraunces'; */
 .col-4,
 .col-3 {
   border: solid 1px blue;
-}
+} */
 
 /* GENERAL STYLE  */
 body {
@@ -170,14 +170,12 @@ OLD NAVBAR STYLE. IT WORKED BUT ALIGNMENT WAS OFF
   color: var(--color-secondary) !important;
 }
 
-/* NEW NAVBAR CODE FINISHES HERE */
-
 .section {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
-.hide-small {
+.hide-sm-md {
   display: none;
 }
 
@@ -679,8 +677,15 @@ footer a {
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  .hidden-photo {
+    visibility: hidden;
+    display: block; /* or inline-block, depending on your layout */
+  }
+}
+
 /* MOBILE SCREENS */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hidden-photo {
     width: 90%;
     height: auto;
@@ -688,11 +693,27 @@ footer a {
     visibility: hidden;
   }
 
-  /* TO CHANHE THE GALLERY LAYOUT ON SMALL SCREENS */
-
-  .hide-small {
+  /* to hide elements on mobile screens */
+  .hide-sm {
     display: none !important;
   }
+
+  /* Footer SM Screens */
+  footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.7rem;
+  }
+
+  .footer-text {
+    font-size: 0.7rem;
+  }
+
+  footer .FrauncesText {
+    font-size: 0.8rem;
+  }
+
+  /* TO CHANHE THE GALLERY LAYOUT ON SMALL SCREENS */
 
   #about-photo {
     position: fixed;
@@ -710,7 +731,7 @@ footer a {
     width: 90%;
     margin-left: 5%;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(245, 243, 244, 0.8);
   }
 
   /* INDEX */
@@ -722,10 +743,6 @@ footer a {
 /* TABLET AND MEDIUM SCREENS */
 @media (min-width: 768px) {
   /* GENERAL MEDIUM STYLE */
-
-  .hide-small {
-    display: block;
-  }
 
   /* INDEX MEDIUM STYLE */
   #logo {
@@ -759,10 +776,9 @@ footer a {
     margin-top: 1rem;
   } */
 
-  /* GALLERY PAGE MEDIUM SCREENS */
-
+  /* GALLERY */
   #gallery .gallery-photo {
-    min-height: 400px;
+    min-height: 200px;
   }
 }
 
@@ -771,6 +787,10 @@ footer a {
   /* INDEX LARGE STYLE */
   #logo {
     font-size: 250px;
+  }
+
+  .hide-sm-md {
+    display: block;
   }
 
   #floating-logo {
@@ -836,7 +856,11 @@ footer a {
   /* GALLERY PAGE LARGE SCREENS */
 
   #gallery .gallery-photo {
-    min-height: 600px;
+    min-height: 700px;
+  }
+
+  #gallery #first-row-gallery {
+    min-height: 300px;
   }
 
   /* ABOUT SECTION */
