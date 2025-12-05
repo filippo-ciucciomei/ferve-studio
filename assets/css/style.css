@@ -684,6 +684,24 @@ footer a {
   }
 }
 
+/* XS BREAKPOINT TO MATCH NAVBAR COLLAPSE */
+@media (max-width: 576px) {
+  /* Footer XS Screens */
+  footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.7rem !important;
+  }
+
+  .footer-text {
+    font-size: 0.7rem !important;
+  }
+
+  footer .FrauncesText {
+    font-size: 0.8rem !important;
+  }
+}
+
 /* MOBILE SCREENS */
 @media (max-width: 767px) {
   .hidden-photo {
@@ -696,21 +714,6 @@ footer a {
   /* to hide elements on mobile screens */
   .hide-sm {
     display: none !important;
-  }
-
-  /* Footer SM Screens */
-  footer a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-size: 0.7rem;
-  }
-
-  .footer-text {
-    font-size: 0.7rem;
-  }
-
-  footer .FrauncesText {
-    font-size: 0.8rem;
   }
 
   /* TO CHANHE THE GALLERY LAYOUT ON SMALL SCREENS */
