@@ -1,21 +1,21 @@
 # 🌸 Ferve Studio Website
 
-A modern and responsive website created for **Ferve Studio**, a forestry and set-design studio.  
+A modern and responsive website created for **Ferve Studio**, a florestry and set-design studio.  
 The site acts as a **digital window display**, showcasing the studio’s aesthetic, services, and creative identity.  
-Since every project is custom and made-to-order, the website focuses on visual presentation rather than selling predefined items. Users can explore the studio's work and reach out through the built-in contact form.
+Since every project is made-to-order and custom to each client, the website focuses on visual presentation rather than selling predefined items. Users can explore the studio's work and reach out through the built-in contact form.
 
 ---
 
 ## 📘 Overview
 
-Ferve Studio specialises in **ad hoc set design, installations, and creative forestry-inspired work**.  
+Ferve Studio specialises in **ad hoc set design, installations, and creative florestry work**.  
 The website communicates:
 
 - The services Ferve Studio offers
 - The brand’s visual and creative identity
 - How clients can get in touch for bespoke projects
 
-The design is minimal, clean, and mobile-first, reflecting the identity and values of the studio.
+The design is creatively arranged, reflecting the identity and values of the studio.
 
 ---
 
@@ -37,12 +37,13 @@ The design is minimal, clean, and mobile-first, reflecting the identity and valu
 - **Bootstrap 5**
 - **Google Fonts**
 - **FontAwesome**
+- **ChatGPT**
 
 ---
 
 ## 🎨 Special Highlights
 
-- Custom **pure CSS animations** developed to enhance the brand's visual identity
+- Custom **pure CSS animations** developed to enhance the brand's visual identity.
 - Clean and modular code architecture designed for easy future improvements
 - Animation systems are ready for potential upgrades using JavaScript for smoother, more dynamic effects
 
@@ -50,16 +51,33 @@ The design is minimal, clean, and mobile-first, reflecting the identity and valu
 
 ## 📂 Project Structure
 
-ferve-studio-website/
+ferve-studio/
 ├── index.html
-├── services.html
+├── about.html
+├── gallery/
+│ ├── gallery-weddings.html
+│ ├── gallery-events.html
+│ └── gallery-editorials.html
 ├── contact.html
-├── gallery.html (if applicable)
 │
-└── assets/
-├── css/
-├── js/
-└── images/
+├── assets/
+│ ├── css/
+│ ├── images/
+│ ├─background01.png
+│ ├─about-portrait.webp
+│ ├─wedding01.jpg
+│ ├─editorial01.jpg
+│ └─events01.jpg
+│
+│ ├── wireframes/
+│ │ ├── landing-wireframe.jpg
+│ │ ├── homepage-wireframe.jpg
+│ │ ├── gallery-wireframe.jpg
+│ │ └── contact-wireframe.jpg
+│ │
+│ └── previews/
+│ └── all-devices-placeholder.png
+│
 
 ---
 
@@ -73,7 +91,7 @@ ferve-studio-website/
 
 ## 🌐 Live Demo
 
-_Add your GitHub Pages / Netlify / Vercel link here once deployed._
+https://filippo-ciucciomei.github.io/ferve-studio/
 
 ---
 
@@ -82,7 +100,6 @@ _Add your GitHub Pages / Netlify / Vercel link here once deployed._
 - Creating responsive layouts with Bootstrap
 - Developing custom CSS animation sequences
 - Structuring multi-page websites
-- Designing around brand identity through typography, spacing, and layout
 - Applying mobile-first design and accessibility principles
 
 ---
@@ -90,10 +107,8 @@ _Add your GitHub Pages / Netlify / Vercel link here once deployed._
 ## 🧩 Future Improvements
 
 - Replace CSS animations with JavaScript for smoother performance
-- Improve accessibility (ARIA labels, contrast checks, keyboard navigation)
 - Add backend/endpoint support for the contact form
 - Expand the site with a projects or portfolio section
-- Add a light/dark mode toggle
 
 ---
 
