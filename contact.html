@@ -5,9 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ferve Studio</title>
 
-    <!-- ADD THE FLOWER ICON FOR THE BROWSER -->
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- ADD KEYWORDS AND OTHER SEO ELEMENTS -->
+    <meta
+      name="description"
+      content="Ferve Studio is a multidisciplinary floral, set, and design studio based in London."
+    />
 
     <!-- GOOGLE FONTS -->
 
@@ -235,7 +256,7 @@
                   class="btn btn-primary"
                   type="button"
                   data-bs-toggle="modal"
-                  data-bs-target="#FerveT&C"
+                  data-bs-target="#messageModal"
                 >
                   Send Message
                 </button>
@@ -381,26 +402,35 @@
 
     <!-- MESSAGE SENT MODAL -->
 
-    <div class="modal fade" id="messageModal" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="messageModal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Message Sent</h5>
+            <h5 class="modal-title">Thank you for sending us a message!</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
             ></button>
           </div>
-          <div class="modal-body">Your message has been successfully sent!</div>
+          <div class="modal-body p-3">
+            We are excited to read what we have to say. Just so you know, we
+            spend most of our days on site, we usually aim to reply to emails
+            within two working days, but depending on the period, it can take a
+            little longer. <br />Thanks for your patience.<br />Ferve Studio
+            Team
+          </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <a href="index.html" class="btn btn-secondary">
+              Back to the Homepage
+            </a>
           </div>
         </div>
       </div>
