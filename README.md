@@ -5,7 +5,7 @@
 
 - [Overview](#overview)
 - [Features](#features)
-- [Wireframes and Pages](#wireframes)
+- [Wireframes and Pages](#wireframes-and-pages)
   - [Index](#index)
   - [About](#about)
   - [Gallery](#gallery)
@@ -18,6 +18,7 @@
 - [Code Quality](#code-quality)
   - [Lighthouse Desktop Scores](#lighthouse-desktop-scores)
   - [Lighthouse Mobile Scores](#lighthouse-mobile-scores)
+- [Bugs and Errors](#bugs-and-errors)
 - [What I Learned](#what-i-learned)
 - [Future Improvements](#future-improvements)
 
@@ -108,7 +109,7 @@ There are two modals in this page, one to read the T&C, and one that confirms th
 - **Bootstrap 5**
 - **Google Fonts**
 - **FontAwesome**
-- **ChatGPT**
+- **ChatGPT** to create some of the images and to review some technical issue
 
 ---
 
@@ -198,6 +199,12 @@ ferve-studio/
 - Fully responsive and tested on desktop, tablet, and mobile devices
 - Interactive components (contact form, modals, carousel) tested across browsers
 
+## Bugs and Errors
+
+- I had a few issues for incorrct use of varius features, such as br inside a UL. Other than that I didn't face any major issue or bug. 
+
+---
+
 ## What I Learned
 
 - Creating responsive layouts with Bootstrap
@@ -206,6 +213,7 @@ ferve-studio/
 - Applying mobile-first design and accessibility principles
 
 ---
+
 
 ## Future Improvements
 

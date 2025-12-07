@@ -1,32 +1,4 @@
-/* FONT STYLING
 
-
-<weight>: Use a value from 100 to 900
-<uniquifier>: Use a unique and descriptive class name
-
-.fraunces-<uniquifier> {
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 0,
-    "WONK" 0;
-}  */
-
-/* LOGO FONT
-font-size: 13.8vw; 
-font-family: 'Fraunces'; */
-
-/* COLORS */
-/* HEX */
-/* --carbon-black: #161A1D;
---dark-red: #660708;
---red: #BA181B;
---grey: #D3D3D3; 
---light-grey: #F5F3F4;
---white: #FFFFFF;
-*/
 
 :root {
   --color-primary: #660708; /* dark red */
@@ -36,28 +8,6 @@ font-family: 'Fraunces'; */
   --carbon-black: #161a1d; /* carbon black */
 }
 
-/* TO SEE THE LAYOUT */
-
-/* .col-md-4,
-.col-md-4,
-.row,
-.col-5,
-.col-6,
-.col-md-6 {
-  border: solid 1px black;
-}
-
-.row {
-  border: solid 1px yellow;
-  padding: 3px;
-}
-
-.col-12,
-.col-1,
-.col-4,
-.col-3 {
-  border: solid 1px blue;
-} */
 
 /* GENERAL STYLE  */
 body {
@@ -89,11 +39,6 @@ a {
 nav {
   z-index: 9999;
 }
-
-/* TO CENTER THE DROPDOWN TEXT */
-/* .nav-item.dropdown {
-  position: relative;
-} */
 
 
 /* TO MAKE THE LANDING NAVBAR SEMI-TRANSPARENT */
@@ -610,21 +555,19 @@ footer a {
   overflow: hidden;
 }
 
-/* wrapper that shrinks to the image size */
+/* Overlay text wrapper that shrinks to the image size */
 .image-figure {
-  position: relative; /* the overlay will be positioned relative to this */
-  display: inline-block; /* shrinkwrap to the image's dimensions */
-  line-height: 0; /* remove descender gaps around img */
+  position: relative; 
+  display: inline-block; 
+  line-height: 0; 
 }
 
-/* keep Bootstrap responsive image behaviour inside the .image-figure */
 .image-figure img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* overlay positioned relative to the image-figure, so it matches image size */
 .image-figure .overlay-text {
   position: absolute;
   inset: 0;
@@ -639,11 +582,11 @@ footer a {
   box-sizing: border-box;
 
   /* these 5 let the text wrap */
-  white-space: normal; /* allow normal wrapping */
-  overflow-wrap: break-word; /* break long words */
-  word-wrap: break-word; /* legacy safe fallback */
+  white-space: normal; 
+  overflow-wrap: break-word; 
+  word-wrap: break-word; 
   min-width: 0;
-  line-height: 1.2; /* reset any inherited 0 line-height */
+  line-height: 1.2; 
 }
 
 /* hover brightness effect still triggered on the outer container */
@@ -673,7 +616,7 @@ footer a {
 
  .hidden-photo {
     visibility: hidden;
-    display: block; /* or inline-block, depending on your layout */
+    display: block;
   }
 
 
@@ -767,11 +710,7 @@ footer a {
     object-position: right center; /* Adjust crop (top / center / bottom) */
   }
 
-  /* #about-photo img {
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-  } */
+
 
   /* GALLERY */
   #gallery .gallery-photo {
@@ -797,7 +736,7 @@ footer a {
     animation: bouncePath 40s linear infinite;
     z-index: 9999;
   }
-  /*
+  /* to make it bounce on the edges of the screen 
   TOP = -30px;
   BOTTOM = calc(100vh - 278px);
   RIGHT = calc(100vw - 430px);
