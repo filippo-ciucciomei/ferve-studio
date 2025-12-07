@@ -41,6 +41,7 @@ nav {
 }
 
 
+
 /* TO MAKE THE LANDING NAVBAR SEMI-TRANSPARENT */
 
 .landing-navbar {
@@ -50,6 +51,17 @@ nav {
 .custom-navbar {
   background-color: var(--light-background) !important;
 }
+
+.nav-item.dropdown .dropdown-menu {
+    min-width: auto;   /* remove default min-width */
+  width: auto;       /* let it adjust to content */
+  max-width: 200px;
+  padding-left: 0.5rem;  /* optional: small padding */
+  padding-right: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  
 
 
 /* --- LOGO --- */
@@ -666,6 +678,7 @@ footer a {
   footer .FrauncesText {
     font-size: 0.8rem !important;
   }
+  
 }
 
 /* MOBILE SCREENS */
@@ -727,6 +740,7 @@ footer a {
     background-color: rgba(255, 255, 255, 0.9);
     border: none;
   }
+
 
   .hidden-photo {
     display: none;
