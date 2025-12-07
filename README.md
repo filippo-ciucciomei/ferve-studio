@@ -69,6 +69,8 @@ The design is creatively arranged, reflecting the identity and values of the stu
 
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
 ![index.html desktop screenshot](assets/readme-files/index-desktop.png)
+<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="100"/>
+
 ![index.html mobile screenshot](assets/readme-files/index-mobile.png)
 For the **landing** page I have created an **animation** made with flowers dissolving in a loop at different randomised time. On top of the animated flowers, the company logo is bouncing around the screen from side to side. 
 On **mobile**, where the available space to bounce the logo is reduced, I have opted for a static logo.
