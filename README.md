@@ -107,11 +107,11 @@ The carousel will be improved later on with JS, to make sure that each image wil
 <img src="assets/readme-files/contact-mobile.png" alt="Mobile Screenshot" width="150"/>
 
 
-In the **contact** page the visitor can submit a contact form with basic info, such as their details, and the type of enquiry. All fields, including the T&C agreement, must be completed to be able to submit the form. 
+In the **contact** page the visitor can submit a contact form with basic info, such as their details, and the type of enquiry. All fields, including the T&C agreement, must be filled to be able to submit the form. 
 
 Below the form (or next to it on mobile size) there is a Google Maps iframe. 
 
-There are two modals in this page, one to read the T&C, and one that confirms the message being sent correctly. 
+There is a modal in this page to read the T&C, and when sending the message, the button will lead you to a confirmation page. 
 
 ---
 
@@ -131,7 +131,7 @@ There are two modals in this page, one to read the T&C, and one that confirms th
 - Custom **pure CSS animations** developed to enhance the brand's visual identity.
 - Clean and modular code architecture designed for easy future improvements
 - Animation systems are ready for potential upgrades using JavaScript for smoother, more dynamic effects
-- Use of Modals for a better UX
+- Use of Modals and Carousels for a better UX
 
 ---
 
@@ -146,6 +146,8 @@ ferve-studio/
 │     ├── gallery-events.html
 │     └── gallery-editorials.html
 ├── contact.html
+│     └── message-sent.html
+
 │
 ├── assets/
 │     ├── css/
@@ -190,7 +192,7 @@ ferve-studio/
 
 ## Code Quality
 
-- HTML5 validated: ![HTML validated](assets/readme-files/html-validated.png)
+- HTML5 validated (all pages reported the same result): ![HTML validated](assets/readme-files/html-validated.png)
 - CSS3 validated: ![CSS validated](assets/readme-files/css-validated.png)
 - Lighthouse Audit (Chrome DevTools) ![Lighthouse Audit](assets/readme-files/lighthouse.png)
 ## Lighthouse Desktop Scores 
