@@ -1,5 +1,29 @@
 # 🌸 Ferve Studio Website
 
+
+## 📑 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Wireframes and Pages](#wireframes)
+  - [Index](#index)
+  - [About](#about)
+  - [Gallery](#gallery)
+  - [Contact](#contact)
+- [Tech Stack](#tech-stack)
+- [Special Highlights](#special-highlights)
+- [Project Structure](#project-structure)
+- [Installation & Usage](#installation--usage)
+- [Testing](#testing)
+- [Code Quality](#code-quality)
+  - [Lighthouse Desktop Scores](#lighthouse-desktop-scores)
+  - [Lighthouse Mobile Scores](#lighthouse-mobile-scores)
+- [What I Learned](#what-i-learned)
+- [Future Improvements](#future-improvements)
+
+
+
+
 ## Deployed website: 
 https://filippo-ciucciomei.github.io/ferve-studio/
 
@@ -37,12 +61,16 @@ The design is creatively arranged, reflecting the identity and values of the stu
 
 ---
 
-## Wireframes
+## Wireframes and Pages
 
 # Index 
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
+![index.html desktop screenshot](assets/readme-files/index-desktop.png)
+![index.html mobile screenshot](assets/readme-files/index-mobile.png)
+
 For the **landing** page I have created an **animation** made with flowers dissolving in a loop at different randomised time. On top of the animated flowers, the company logo is bouncing around the screen from side to side. 
 On **mobile**, where the available space to bounce the logo is reduced, I have opted for a static logo.
+All the flowers were created using ChatGPT. 
 I will upgrade this animation later-on using JS. 
 
 
