@@ -1,6 +1,11 @@
 # 🌸 Ferve Studio Website
 
-A modern and responsive website created for **Ferve Studio**, a florestry and set-design studio.  
+
+![Screenshot of feature](assets/readme-files/all-devices-black.png)
+
+
+
+A modern and responsive website created for **Ferve Studio**, a florestry and set-design studio based in Hackney, East London (UK).  
 The site acts as a **digital window display**, showcasing the studio’s aesthetic, services, and creative identity.  
 Since every project is made-to-order and custom to each client, the website focuses on visual presentation rather than selling predefined items. Users can explore the studio's work and reach out through the built-in contact form.
 
