@@ -26,6 +26,7 @@
 
 
 ## Deployed website: 
+
 https://filippo-ciucciomei.github.io/ferve-studio/
 
 
@@ -65,6 +66,7 @@ The design is creatively arranged, reflecting the identity and values of the stu
 ## Wireframes and Pages
 
 # Index 
+
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
 ![index.html desktop screenshot](assets/readme-files/index-desktop.png)
 ![index.html mobile screenshot](assets/readme-files/index-mobile.png)
@@ -75,12 +77,14 @@ I will upgrade this animation later-on using JS.
 
 
 # About 
+
 ![about.html wireframe](assets/readme-files/wire-about.jpeg)
 ![about.html desktop screenshot](assets/readme-files/about-desktop.png)
 ![about.html mobile screenshot](assets/readme-files/about-mobile.png)
 In the **about** page I have combined some text and images. To create a clean and responsive layout, I have used Bootstrap row/column system, and I have used some not-displayed elements, that kept their position in the flow. 
 
 # Gallery 
+
 ![gallery.html wireframe](assets/readme-files/wire-gallery.jpeg)
 ![gallery.html desktop screenshot](assets/readme-files/gallery-desktop.png)
 ![gallery.html mobile screenshot](assets/readme-files/gallery-mobile.png)
@@ -91,6 +95,7 @@ When overing an image you can see the image caption, and when clicking them, it 
 The carousel will be improved later on with JS, to make sure that each image will point to the same image to start the carousel. 
 
 # Contact 
+
 ![contact.html wireframe](assets/readme-files/wire-contact.jpeg)
 ![contact.html desktop screenshot](assets/readme-files/contact-desktop.png)
 ![contact.html mobile screenshot](assets/readme-files/contact-mobile.png)
@@ -199,6 +204,8 @@ ferve-studio/
 - Fully responsive and tested on desktop, tablet, and mobile devices
 - Interactive components (contact form, modals, carousel) tested across browsers
 
+---
+
 ## Bugs and Errors
 
 - I had a few issues for incorrct use of varius features, such as br inside a UL. Other than that I didn't face any major issue or bug. 
@@ -213,7 +220,6 @@ ferve-studio/
 - Applying mobile-first design and accessibility principles
 
 ---
-
 
 ## Future Improvements
 
