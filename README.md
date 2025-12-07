@@ -84,12 +84,13 @@ There are two modals in this page, one to read the T&C, and one that confirms th
 - Custom **pure CSS animations** developed to enhance the brand's visual identity.
 - Clean and modular code architecture designed for easy future improvements
 - Animation systems are ready for potential upgrades using JavaScript for smoother, more dynamic effects
+- Use of Modals for a better UX
 
 ---
 
 ## Project Structure
 
-<pre> ```
+<pre> 
 ferve-studio/
 ├── index.html
 ├── about.html
@@ -118,7 +119,7 @@ ferve-studio/
 │     ├── lighthouse.png
 │     └── all-devices-mockaup.png
 │
-``` </pre>
+ </pre>
 
 ---
 
@@ -145,16 +146,22 @@ ferve-studio/
 - HTML5 validated: ![HTML validated](assets/readme-files/html-validated.png)
 - CSS3 validated: ![CSS validated](assets/readme-files/css-validated.png)
 - Lighthouse Audit (Chrome DevTools) ![Lighthouse Audit](assets/readme-files/lighthouse.png)
-- Lighthouse Audit Desktop version, in order for index, about, gallery, contact:
-  - Performance: 92, 99, 99, 99
-  - Accessibility: 100, 96, 96, 92
-  - Best Practices: 93, 96, 96, 74
-  - SEO: 100, 100, 100, 100
-- Lighthouse Audit Mobile version, in order for index, about, gallery, contact:
-  - Performance: 74, 68, 75, 92
-  - Accessibility: 100, 95, 95, 90
-  - Best Practices: 96, 96, 96, 75
-  - SEO: 100, 100, 100, 100
+- Lighthouse Desktop Scores 
+| Page       | Performance | Accessibility | Best Practices | SEO |
+|------------|------------|---------------|----------------|-----|
+| Index      | 92         | 100           | 93             | 100 |
+| About      | 99         | 96            | 96             | 100 |
+| Gallery    | 99         | 96            | 96             | 100 |
+| Contact    | 99         | 92            | 74             | 100 |
+
+- Lighthouse Mobile Scores 
+| Page       | Performance | Accessibility | Best Practices | SEO |
+|------------|------------|---------------|----------------|-----|
+| Index      | 74         | 100           | 96             | 100 |
+| About      | 68         | 95            | 96             | 100 |
+| Gallery    | 75         | 95            | 96             | 100 |
+| Contact    | 92         | 90            | 75             | 100 |
+
 - Fully responsive and tested on desktop, tablet, and mobile devices
 - Interactive components (contact form, modals, carousel) tested across browsers
 
