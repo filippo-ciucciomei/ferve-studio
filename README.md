@@ -89,6 +89,7 @@ There are two modals in this page, one to read the T&C, and one that confirms th
 
 ## Project Structure
 
+<pre> ```
 ferve-studio/
 ├── index.html
 ├── about.html
@@ -116,7 +117,8 @@ ferve-studio/
 │     ├── html-validated.png
 │     ├── lighthouse.png
 │     └── all-devices-mockaup.png
-
+│
+``` </pre>
 
 ---
 
@@ -142,13 +144,13 @@ ferve-studio/
 
 - HTML5 validated: ![HTML validated](assets/readme-files/html-validated.png)
 - CSS3 validated: ![CSS validated](assets/readme-files/css-validated.png)
-- ![Lighthouse Audit](assets/readme-files/lighthouse.png)
-- Lighthouse Audit (Chrome DevTools), Desktop version, in order for index, about, gallery, contact:
+- Lighthouse Audit (Chrome DevTools) ![Lighthouse Audit](assets/readme-files/lighthouse.png)
+- Lighthouse Audit Desktop version, in order for index, about, gallery, contact:
   - Performance: 92, 99, 99, 99
   - Accessibility: 100, 96, 96, 92
   - Best Practices: 93, 96, 96, 74
   - SEO: 100, 100, 100, 100
-- Lighthouse Audit (Chrome DevTools), Mobile version, in order for index, about, gallery, contact:
+- Lighthouse Audit Mobile version, in order for index, about, gallery, contact:
   - Performance: 74, 68, 75, 92
   - Accessibility: 100, 95, 95, 90
   - Best Practices: 96, 96, 96, 75
