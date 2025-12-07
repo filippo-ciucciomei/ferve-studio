@@ -68,10 +68,11 @@ The design is creatively arranged, reflecting the identity and values of the stu
 # Index 
 
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
-![index.html desktop screenshot](assets/readme-files/index-desktop.png)
-<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="100"/>
+<img src="assets/readme-files/index-desktop.png" alt="Desktop Screenshot" width="600"/>
+<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="200"/>
 
 ![index.html mobile screenshot](assets/readme-files/index-mobile.png)
+
 For the **landing** page I have created an **animation** made with flowers dissolving in a loop at different randomised time. On top of the animated flowers, the company logo is bouncing around the screen from side to side. 
 On **mobile**, where the available space to bounce the logo is reduced, I have opted for a static logo.
 All the flowers were created using ChatGPT. 
@@ -83,6 +84,7 @@ I will upgrade this animation later-on using JS.
 ![about.html wireframe](assets/readme-files/wire-about.jpeg)
 ![about.html desktop screenshot](assets/readme-files/about-desktop.png)
 ![about.html mobile screenshot](assets/readme-files/about-mobile.png)
+
 In the **about** page I have combined some text and images. To create a clean and responsive layout, I have used Bootstrap row/column system, and I have used some not-displayed elements, that kept their position in the flow. 
 
 # Gallery 
@@ -90,6 +92,7 @@ In the **about** page I have combined some text and images. To create a clean an
 ![gallery.html wireframe](assets/readme-files/wire-gallery.jpeg)
 ![gallery.html desktop screenshot](assets/readme-files/gallery-desktop.png)
 ![gallery.html mobile screenshot](assets/readme-files/gallery-mobile.png)
+
 In the **gallery** page, for laptop or bigger screens, I have opted for a dynamic order of the images, to reflext the brand "out of ordinary" approach to design. I have placed the images inside BS columns that change size according to the screen size. As the screen reduces its size, the flow of images becomes less complex, till the mobile size, where the images are all one after the other, with no spaces between them. 
 
 When overing an image you can see the image caption, and when clicking them, it will open a crousel into a large sized modal. 
