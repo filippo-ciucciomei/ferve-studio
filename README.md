@@ -68,8 +68,8 @@ The design is creatively arranged, reflecting the identity and values of the stu
 # Index 
 
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
-<img src="assets/readme-files/index-desktop.png" alt="Desktop Screenshot" width="600"/>
-<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="200"/>
+<img src="assets/readme-files/index-desktop.png" alt="Desktop Screenshot" width="680"/>
+<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="150"/>
 
 ![index.html mobile screenshot](assets/readme-files/index-mobile.png)
 
