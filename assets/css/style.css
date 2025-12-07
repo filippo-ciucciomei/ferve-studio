@@ -1,7 +1,9 @@
-/* <weight>: Use a value from 100 to 900
- <uniquifier>: Use a unique and descriptive class name */
-
 /* FONT STYLING
+
+
+<weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name
+
 .fraunces-<uniquifier> {
   font-family: "Fraunces", serif;
   font-optical-sizing: auto;
@@ -66,6 +68,7 @@ body {
   color: var(--carbon-black);
 }
 
+/* to set a limit on website expansion on large screens */
 .container-fluid {
   max-width: 1320px !important;
 }
@@ -82,27 +85,16 @@ a {
   font-size: 1.2rem;
 }
 
+/* to keep the navbar above the other background flowers */
 nav {
   z-index: 9999;
 }
 
 /* TO CENTER THE DROPDOWN TEXT */
-.nav-item.dropdown {
+/* .nav-item.dropdown {
   position: relative;
-}
+} */
 
-.modal {
-  z-index: 99999;
-}
-
-.modal-content {
-  background-color: var(--light-background) !important;
-  font-size: 0.8rem;
-}
-
-.modal-header {
-  color: var(--color-primary);
-}
 
 /* TO MAKE THE LANDING NAVBAR SEMI-TRANSPARENT */
 
@@ -114,28 +106,6 @@ nav {
   background-color: var(--light-background) !important;
 }
 
-/* 
-OLD NAVBAR STYLE. IT WORKED BUT ALIGNMENT WAS OFF
-.navbar-brand {
-  padding: 0px !important;
-}
-
-.navbar a {
-  color: var(--color-primary) !important;
-}
-
-.navbar .nav-link {
-  color: var(--color-primary) !important;
-  font-size: 1.2rem;
-}
-
-.navbar .nav-link:hover {
-  color: var(--color-secondary) !important;
-}
-
-.logo-navbar {
-  font-size: 1.8rem;
-} */
 
 /* --- LOGO --- */
 .navbar-brand {
@@ -680,12 +650,27 @@ footer a {
   opacity: 1;
 }
 
-@media (max-width: 767px) {
-  .hidden-photo {
+/* MODAL STYLE */
+
+.modal {
+  z-index: 99999;
+}
+
+.modal-content {
+  background-color: var(--light-background) !important;
+  font-size: 0.8rem;
+}
+
+.modal-header {
+  color: var(--color-primary);
+}
+
+ .hidden-photo {
     visibility: hidden;
     display: block; /* or inline-block, depending on your layout */
   }
-}
+
+
 
 /* XS BREAKPOINT TO MATCH NAVBAR COLLAPSE */
 @media (max-width: 576px) {
