@@ -1,7 +1,7 @@
 # 🌸 Ferve Studio Website
 
 
-![Screenshot of feature](assets/readme-files/all-devices-black.png)
+![Website Mockup](assets/readme-files/all-devices-mockaup.png)
 
 
 
@@ -21,6 +21,36 @@ The website communicates:
 - How clients can get in touch for bespoke projects
 
 The design is creatively arranged, reflecting the identity and values of the studio.
+
+---
+
+# Index 
+![index.html wireframe](assets/readme-files/wire-index.jpeg)
+For the **landing** page I have created an **animation** made with flowers dissolving in a loop at different randomised time. On top of the animated flowers, the company logo is bouncing around the screen from side to side. 
+On **mobile**, where the available space to bounce the logo is reduced, I have opted for a static logo.
+I will upgrade this animation later-on using JS. 
+
+
+# About 
+![about.html wireframe](assets/readme-files/wire-about.jpeg)
+In the **about** page I have combined some text and images. To create a clean and responsive layout, I have used Bootstrap row/column system, and I have used some not-displayed elements, that kept their position in the flow. 
+
+# Gallery 
+![gallery.html wireframe](assets/readme-files/wire-gallery.jpeg)
+In the **gallery** page, for laptop or bigger screens, I have opted for a dynamic order of the images, to reflext the brand "out of ordinary" approach to design. I have placed the images inside BS columns that change size according to the screen size. As the screen reduces its size, the flow of images becomes less complex, till the mobile size, where the images are all one after the other, with no spaces between them. 
+
+When overing an image you can see the image caption, and when clicking them, it will open a crousel into a large sized modal. 
+
+The carousel will be improved later on with JS, to make sure that each image will point to the same image to start the carousel. 
+
+# Contact 
+![contact.html wireframe](assets/readme-files/wire-contact.jpeg)
+In the **contact** page the visitor can submit a contact form with basic info, such as their details, and the type of enquiry. All fields, including the T&C agreement, must be completed to be able to submit the form. 
+
+Below the form (or next to it on mobile size) there is a Google Maps iframe. 
+
+There are two modals in this page, one to read the T&C, and one that confirms the message being sent correctly. 
+
 
 ---
 
@@ -74,15 +104,15 @@ ferve-studio/
 │ ├─editorial01.jpg
 │ └─events01.jpg
 │
-│ ├── wireframes/
-│ │ ├── landing-wireframe.jpg
-│ │ ├── homepage-wireframe.jpg
-│ │ ├── gallery-wireframe.jpg
-│ │ └── contact-wireframe.jpg
-│ │
-│ └── previews/
-│ └── all-devices-placeholder.png
-│
+│ ├──  readme-files/
+│ │  ├── wire-index.jpg
+│ │  ├── wire-about.jpg
+│ │  ├── wire-gallery.jpg
+│ │  ├── wire-contact.jpg
+│ │  ├── css-validated.png
+│ │  ├── html validated.png
+│ │  └── all-devices-mockaup.png
+
 
 ---
 
