@@ -69,7 +69,7 @@ The design is creatively arranged, reflecting the identity and values of the stu
 
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
 <img src="assets/readme-files/index-desktop.png" alt="Desktop Screenshot" width="680"/>
-<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="150"/>
+<img src="assets/readme-files/index-mobile.png" alt="Mobile Screenshot" width="140"/>
 
 
 For the **landing** page I have created an **animation** made with flowers dissolving in a loop at different randomised time. On top of the animated flowers, the company logo is bouncing around the screen from side to side. 
@@ -82,7 +82,7 @@ I will upgrade this animation later-on using JS.
 
 ![about.html wireframe](assets/readme-files/wire-about.jpeg)
 <img src="assets/readme-files/about-desktop.png" alt="Desktop Screenshot" width="680"/>
-<img src="assets/readme-files/about-mobile.png" alt="Mobile Screenshot" width="150"/>
+<img src="assets/readme-files/about-mobile.png" alt="Mobile Screenshot" width="140"/>
 
 
 In the **about** page I have combined some text and images. To create a clean and responsive layout, I have used Bootstrap row/column system, and I have used some not-displayed elements, that kept their position in the flow. 
@@ -91,7 +91,7 @@ In the **about** page I have combined some text and images. To create a clean an
 
 ![gallery.html wireframe](assets/readme-files/wire-gallery.jpeg)
 <img src="assets/readme-files/gallery-desktop.png" alt="Desktop Screenshot" width="680"/>
-<img src="assets/readme-files/gallery-mobile.png" alt="Mobile Screenshot" width="150"/>
+<img src="assets/readme-files/gallery-mobile.png" alt="Mobile Screenshot" width="140"/>
 
 
 In the **gallery** page, for laptop or bigger screens, I have opted for a dynamic order of the images, to reflext the brand "out of ordinary" approach to design. I have placed the images inside BS columns that change size according to the screen size. As the screen reduces its size, the flow of images becomes less complex, till the mobile size, where the images are all one after the other, with no spaces between them. 
@@ -104,7 +104,7 @@ The carousel will be improved later on with JS, to make sure that each image wil
 
 ![contact.html wireframe](assets/readme-files/wire-contact.jpeg)
 <img src="assets/readme-files/contact-desktop.png" alt="Desktop Screenshot" width="680"/>
-<img src="assets/readme-files/contact-mobile.png" alt="Mobile Screenshot" width="150"/>
+<img src="assets/readme-files/contact-mobile.png" alt="Mobile Screenshot" width="140"/>
 
 
 In the **contact** page the visitor can submit a contact form with basic info, such as their details, and the type of enquiry. All fields, including the T&C agreement, must be filled to be able to submit the form. 
