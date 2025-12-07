@@ -146,7 +146,7 @@ ferve-studio/
 - HTML5 validated: ![HTML validated](assets/readme-files/html-validated.png)
 - CSS3 validated: ![CSS validated](assets/readme-files/css-validated.png)
 - Lighthouse Audit (Chrome DevTools) ![Lighthouse Audit](assets/readme-files/lighthouse.png)
-- Lighthouse Desktop Scores 
+## Lighthouse Desktop Scores 
 | Page       | Performance | Accessibility | Best Practices | SEO |
 |------------|------------|---------------|----------------|-----|
 | Index      | 92         | 100           | 93             | 100 |
@@ -154,7 +154,7 @@ ferve-studio/
 | Gallery    | 99         | 96            | 96             | 100 |
 | Contact    | 99         | 92            | 74             | 100 |
 
-- Lighthouse Mobile Scores 
+## Lighthouse Mobile Scores 
 | Page       | Performance | Accessibility | Best Practices | SEO |
 |------------|------------|---------------|----------------|-----|
 | Index      | 74         | 100           | 96             | 100 |
