@@ -1,8 +1,10 @@
 # 🌸 Ferve Studio Website
 
+## Deployed website: 
+https://filippo-ciucciomei.github.io/ferve-studio/
+
 
 ![Website Mockup](assets/readme-files/all-devices-mockaup.png)
-
 
 
 A modern and responsive website created for **Ferve Studio**, a florestry and set-design studio based in Hackney, East London (UK).  
@@ -11,7 +13,7 @@ Since every project is made-to-order and custom to each client, the website focu
 
 ---
 
-## 📘 Overview
+## Overview
 
 Ferve Studio specialises in **ad hoc set design, installations, and creative florestry work**.  
 The website communicates:
@@ -23,6 +25,19 @@ The website communicates:
 The design is creatively arranged, reflecting the identity and values of the studio.
 
 ---
+
+## Features
+
+- Fully responsive layout using **Bootstrap 5**
+- Hand-crafted **CSS animations**
+- Clean navigation and intuitive structure
+- Contact form for client inquiries
+- Branding supported by Google Fonts and FontAwesome icons
+- Mobile-first layout and smooth user experience
+
+---
+
+## Wireframes
 
 # Index 
 ![index.html wireframe](assets/readme-files/wire-index.jpeg)
@@ -51,21 +66,9 @@ Below the form (or next to it on mobile size) there is a Google Maps iframe.
 
 There are two modals in this page, one to read the T&C, and one that confirms the message being sent correctly. 
 
-
 ---
 
-## 🚀 Features
-
-- Fully responsive layout using **Bootstrap 5**
-- Hand-crafted **CSS animations**
-- Clean navigation and intuitive structure
-- Contact form for client inquiries
-- Branding supported by Google Fonts and FontAwesome icons
-- Mobile-first layout and smooth user experience
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **HTML5**
 - **CSS3**
@@ -76,7 +79,7 @@ There are two modals in this page, one to read the T&C, and one that confirms th
 
 ---
 
-## 🎨 Special Highlights
+## Special Highlights
 
 - Custom **pure CSS animations** developed to enhance the brand's visual identity.
 - Clean and modular code architecture designed for easy future improvements
@@ -84,39 +87,40 @@ There are two modals in this page, one to read the T&C, and one that confirms th
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ferve-studio/
 ├── index.html
 ├── about.html
 ├── gallery/
-│ ├── gallery-weddings.html
-│ ├── gallery-events.html
-│ └── gallery-editorials.html
+│     ├── gallery-weddings.html
+│     ├── gallery-events.html
+│     └── gallery-editorials.html
 ├── contact.html
 │
 ├── assets/
-│ ├── css/
-│ ├── images/
-│ ├─background01.png
-│ ├─about-portrait.webp
-│ ├─wedding01.jpg
-│ ├─editorial01.jpg
-│ └─events01.jpg
+│     ├── css/
+│     ├── images/
+│     ├─background01.png
+│     ├─about-portrait.webp
+│     ├─wedding01.jpg
+│     ├─editorial01.jpg
+│     └─events01.jpg
 │
-│ ├──  readme-files/
-│ │  ├── wire-index.jpg
-│ │  ├── wire-about.jpg
-│ │  ├── wire-gallery.jpg
-│ │  ├── wire-contact.jpg
-│ │  ├── css-validated.png
-│ │  ├── html validated.png
-│ │  └── all-devices-mockaup.png
+├── readme-files/
+│     ├── wire-index.jpg
+│     ├── wire-about.jpg
+│     ├── wire-gallery.jpg
+│     ├── wire-contact.jpg
+│     ├── css-validated.png
+│     ├── html-validated.png
+│     ├── lighthouse.png
+│     └── all-devices-mockaup.png
 
 
 ---
 
-## 🔧 Installation & Usage
+## Installation & Usage
 
 1. Clone or download this repository
 2. Open **index.html** in your preferred browser
@@ -124,13 +128,35 @@ ferve-studio/
 
 ---
 
-## 🌐 Live Demo
+## Testing
 
-https://filippo-ciucciomei.github.io/ferve-studio/
+- All internal navigation links work correctly across all screen sizes and devices
+- Quote form prevents submission if required fields are left empty (native HTML5 validation)
+- Responsive layout tested on mobile (320px), tablet (768px), and desktop (1440px+) devices
+- All interactive elements (buttons, inputs) are keyboard accessible
+- All images have appropriate alt text
 
 ---
 
-## 📚 What I Learned
+## Code Quality
+
+- HTML5 validated: ![HTML validated](assets/readme-files/html-validated.png)
+- CSS3 validated: ![CSS validated](assets/readme-files/css-validated.png)
+- ![Lighthouse Audit](assets/readme-files/lighthouse.png)
+- Lighthouse Audit (Chrome DevTools), Desktop version, in order for index, about, gallery, contact:
+  - Performance: 92, 99, 99, 99
+  - Accessibility: 100, 96, 96, 92
+  - Best Practices: 93, 96, 96, 74
+  - SEO: 100, 100, 100, 100
+- Lighthouse Audit (Chrome DevTools), Mobile version, in order for index, about, gallery, contact:
+  - Performance: 74, 68, 75, 92
+  - Accessibility: 100, 95, 95, 90
+  - Best Practices: 96, 96, 96, 75
+  - SEO: 100, 100, 100, 100
+- Fully responsive and tested on desktop, tablet, and mobile devices
+- Interactive components (contact form, modals, carousel) tested across browsers
+
+## What I Learned
 
 - Creating responsive layouts with Bootstrap
 - Developing custom CSS animation sequences
@@ -139,7 +165,7 @@ https://filippo-ciucciomei.github.io/ferve-studio/
 
 ---
 
-## 🧩 Future Improvements
+## Future Improvements
 
 - Replace CSS animations with JavaScript for smoother performance
 - Add backend/endpoint support for the contact form
@@ -147,6 +173,6 @@ https://filippo-ciucciomei.github.io/ferve-studio/
 
 ---
 
-## 👤 Author
+## Author
 
 **Filippo Ciucciomei**
