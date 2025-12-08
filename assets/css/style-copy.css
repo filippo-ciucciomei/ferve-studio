@@ -1,4 +1,5 @@
-/* COLOR PALETTE */
+
+
 :root {
   --color-primary: #660708; /* dark red */
   --color-secondary: #ba181b; /* red */
@@ -26,7 +27,7 @@ a {
   color: var(--color-primary);
 }
 
-/* ADDS FERVE'S FONT */
+/* ADDS FERVE'S FONT TO THE LOGO */
 .FrauncesText {
   font-family: "Fraunces", serif;
   font-weight: 251;
@@ -34,50 +35,53 @@ a {
   font-size: 1.2rem;
 }
 
-/* NAVBAR */
 /* to keep the navbar above the other background flowers */
 nav {
   z-index: 9999;
 }
 
-/* to make the index navbar semi transparent */
+
+
+/* TO MAKE THE LANDING NAVBAR SEMI-TRANSPARENT */
+
 .landing-navbar {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
-/* to style the navbar dropdown */
+.custom-navbar {
+  background-color: var(--light-background) !important;
+}
+
 .nav-item.dropdown .dropdown-menu {
-  min-width: auto;   
-  width: auto;       
+    min-width: auto;   /* remove default min-width */
+  width: auto;       /* let it adjust to content */
   max-width: 200px;
-  padding-left: 0.5rem; 
+  padding-left: 0.5rem;  /* optional: small padding */
   padding-right: 0.5rem;
   background-color: rgba(255, 255, 255, 0.4) !important;
   }
 
-  /* .custom-navbar {
-  background-color: var(--light-background) !important;
-} */
+  
 
 
 /* --- LOGO --- */
 .navbar-brand {
   padding: 0 !important; /* removes Bootstrap’s default vertical padding */
   display: flex;
-  align-items: center; 
+  align-items: center; /* vertical centering */
 }
 
 .logo-navbar {
   font-size: 1.8rem;
 }
 
-/* --- navbar alignment --- */
+/* --- NAVBAR ALIGNMENT FIX --- */
 .landing-navbar .container {
   display: flex;
-  align-items: center; /* align logo + menu  */
+  align-items: center; /* align logo + menu perfectly */
 }
 
-/* --- nav links --- */
+/* --- NAV LINKS --- */
 .navbar a {
   color: var(--color-primary) !important;
 }
@@ -111,7 +115,7 @@ nav {
   font-size: 1.5rem;
 }
 
-/* GALLERY */
+/* PORTFOLIO */
 
 .modal-dialog {
   max-height: 90vh; /* prevent overflow */
@@ -145,10 +149,6 @@ nav {
 
 /* CONTACT */
 
-#contact {
-  z-index: 999;
-}
-
 .form-control {
   background-color: rgba(255, 255, 255, 0.6) !important;
 }
@@ -164,25 +164,6 @@ nav {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 14px;
-}
-
-.contact-flower1 {
-  position: fixed;
-  top: 35px;
-  right: 9vw;
-  width: 350px;
-  opacity: 0.3;
-  /* rotate: calc(-35deg); */
-  z-index: 1;
-}
-
-.contact-flower2 {
-  position: fixed;
-  bottom: 10px;
-  left: 10vw;
-  width: 350px;
-  opacity: 0.3;
-  z-index: 1;
 }
 
 /* INDEX */
@@ -555,6 +536,7 @@ nav {
   /* z-index: 999; */
 }
 
+
 /* MESSAGE CONFIRMATION PAGE */
 
 #message-confirmation {
@@ -805,37 +787,37 @@ footer a {
 */
   @keyframes bouncePath {
     0% {
-      top: 50px;
+      top: 10vh;
       left: -11px;
     }
     /* FIRST MOVE horizontal */
     18% {
-      top: calc(100vh - 350px);
+      top: calc(100vh - 50vh);
       left: calc(100vw - 430px);
     }
     /* SECOND MOVE  vertical*/
     26% {
       top: calc(100vh - 278px);
-      left: calc(100vw - 707px);
+      left: calc(100vw - 40vw);
     }
     /* THIRD MOVE vertical */
     39% {
       top: -30px;
-      left: 200px;
+      left: 20vw;
     }
     /* FOURTH MOVE vertical */
     45% {
-      top: calc(100vh - 540px);
+      top: calc(100vh - 45vh);
       left: 0px;
     }
     /* FIFT MOVE horizntal */
     54% {
       top: calc(100vh - 278px);
-      left: 155px;
+      left: 30vw;
     }
     /* SIXTH MOVE horizontal */
     74% {
-      top: 120px;
+      top: 20vh;
       left: calc(100vw - 430px);
     }
     /* SEVENT MOVE vetical*/
@@ -845,7 +827,7 @@ footer a {
     }
     /* EIGHT MOVE */
     100% {
-      top: 50px;
+      top: 10vh;
       left: -11px;
     }
   }
