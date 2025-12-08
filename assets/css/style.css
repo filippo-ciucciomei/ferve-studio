@@ -564,6 +564,15 @@ nav {
   text-decoration: none;
 }
 
+@keyframes fadeConfirmationMessage {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
 .message-flower1 {
   position: fixed;
   top: 35px;
@@ -572,6 +581,7 @@ nav {
   opacity: 0.7;
   /* rotate: calc(-35deg); */
   z-index: 1;
+  animation: fadeConfirmationMessage 4s ease-out;
 }
 
 .message-flower2 {
@@ -581,6 +591,7 @@ nav {
   width: 350px;
   opacity: 0.7;
   z-index: 1;
+  animation: fadeConfirmationMessage 4s ease-out;
 }
 
 /* MAIN */
